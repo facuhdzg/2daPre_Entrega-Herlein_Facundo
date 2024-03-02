@@ -647,16 +647,180 @@ html{
 }
 @media only screen and (min-width:3839px)
 {
-    /* HEADER */
-    
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    /* HEADER */    
+    .navbar-brand span{       
+        font-weight: 500;
+        font-size: 1.2em;    
+    }
+    .navbar-brand{
+        color:white;
+        font-size: 3.5em;
+    }
+    .collapse{
+        padding-left: 17%;
+        height:150px;
+    }
+    .navbar-nav .nav-item {              
+        color: white;
+        font-size: 2.9em;            
+    }
+    .d-flex .btn{
+        width:8em;
+        height: 1.6em;
+        color: white;
+        font-size: 2.5em;
+        line-height: 20px;        
+    } 
+    .d-flex .form-control{
+        width: 25em;
+        height: 2em;
+        font-size: 2em;        
+    }
     /*FIN HEADER */
-    /* FOOTER */
 
+    /* FOOTER */
+    .pie{
+        display: grid;
+        width: 100%;
+        height: 250px;        
+        grid-template-rows: 190px 60px;       
+    }
+    .pie .redes{
+        font-size: 3.2em;
+        align-items: center;
+        height: 190px;               
+    }
+    .pie .derechos{             
+        width: 100%;
+        height: 100%;
+        font-size: 2em;          
+    }
+    .pie .ubicacion{
+        width: 100%;
+        height: 100%;
+    }    
+    .pie .ubicacion iframe{         
+        width: 90%;
+        height: 90%;            
+    }    
     /*FIN FOOTER */
     /* PRINCIPAL */
     .principal{
-        background-color: red;
+        width: 100%;
+        height: 100%;
+        background-color: var(--colorPrincipal);
+        background-size: 60% 800px, 100% 500px;
     }
+    .principal .carousel{
+        width: 70%;
+        height: 70em;
+    }
+    .principal .carousel img{
+        width: 100%;
+        height: 80em;
+    }
+    .principal .carousel-indicators button{
+      width: 70px;
+    }    
     /*FIN PRINCIPAL */
+    /* PRODUCTOS */
+    .principalP .filtros .dropdown{
+        width: 60%;
+        padding-left: 5px;
+    }
+    .principalP .filtros .dropdown button{
+        height: 2em;
+        font-size: 2em;       
+    }
+    .principalP .productos article img{
+        width:800px;
+        height:800px;
+    }
+    .principalP .productos article a{
+        width:100%;
+        height:100%;
+    }
+    .principalP .productos article p{
+       font-size: 2.2em;
+    }    
+    /*FIN PRODUCTOS */
+    /* SOBRE NOSOTROS */
+    .principalSobreNosotros .SNlogo img{
+        width:500px;
+        height: 500px;
+    }
+    .principalSobreNosotros #Texto{
+        font-size: 3em;
+    }
+    /*FIN SOBRE NOSOTROS */
+    /* CONTACTO */
+    .principalContacto{
+        background-position: bottom;
+        background-size: 100% 600px;
+    }
+    .principalContacto .Textocontacto{
+        font-size: 4em;
+        text-align: center;
+    }
+    .principalContacto span{
+        font-size: 3em;
+        padding-bottom: 3%;
+    }
+    /*FIN CONTACTO */
+    /* POSVENTA */
+    .principalPosventa{
+        display: grid;
+        width: 100%;
+        height: 130vh;
+        text-align: center;
+        justify-content: center;
+        
+    }  
+    .principalPosventa form{
+        margin-top:5% ;
+    }
+    .principalPosventa h2{
+        font-size: 4em;                
+    }
+    .principalPosventa form label, input[type="email"], input[type="number"], input[type="text"] {
+        font-size: 2.5em;                           
+    }
+    .principalPosventa input[type="file"]{
+        font-size: 2em;
+        width:60%;
+    }
+    .principalPosventa textarea{
+        height:15em;
+        font-size: 2em;
+    }
+    .principalPosventa #enviar{
+        font-size: 2.5em;
+    }
+    .principalPosventa #borrar{
+        font-size: 2.5em;
+    }
+    /*FIN POSVENTA */
+    /* BOTON SUBIR */
+    .subir{    
+        position:fixed;
+        right:60px;
+        bottom: 100px;
+        width:80px;
+        height:80px;
+        background-color: var(--colorHeader);    
+        border-radius: 50%;
+        text-align: center;
+        line-height: 80px;    
+        font-size: 50px;    
+    }
+    .subir i{    
+        color: black;
+    }
+    /*FIN BOTON SUBIR */
 }
 /*FIN MEDIA QUERIES */
