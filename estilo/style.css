@@ -645,6 +645,131 @@ html{
     }
     /*FIN CONTACTO */
 }
+@media only screen and (min-width:1920px){
+/* HEADER */
+.collapse{
+    padding-left: 12%;
+}
+.d-flex .btn{
+    width:100px;
+    height: 30px;    
+    font-size: 1.2em;
+    line-height: 5px;           
+} 
+.d-flex .form-control{
+    width: 25em;
+    height: 2em;
+    font-size: 1em;        
+}
+/*FIN HEADER */
+/* FOOTER */
+.pie{
+    width: 100%;
+    height: 150px;
+    grid-template-rows: 100px 50px ;
+}
+.pie .redes {
+    font-size: 2em;
+    letter-spacing: 1em;
+}
+.pie .derechos{
+    font-size: 1.2em;
+    padding-bottom: 1%;
+}
+.pie .ubicacion {
+    width:100%;
+    height:150px;
+}
+.pie .ubicacion iframe{
+    width:90%;
+    height: 90%;
+}
+/*FIN FOOTER */
+/* PRINCIPAL */
+.principal{
+    width: 100%;
+    height: 160vh;
+    background-size: 70% 350px ,100% 300px;
+}
+/*FIN PRINCIPAL */
+/* PRODUCTOS */
+.principalP .productos {
+    grid-gap:10px;
+        
+    
+}
+.principalP .productos article img{
+    width:400px;
+    height:400px;
+}
+.principalP .productos article a{
+    width:100%;
+    height:100%;
+}
+.principalP .productos article p{
+   font-size: 1.5em;
+}    
+/*FIN PRODUCTOS */
+/* SOBRE NOSOTROS */
+.principalSobreNosotros .SNlogo img{
+    width: 400px;
+    height:400px;
+}
+.principalSobreNosotros #Texto{
+    font-size: 1.3em;
+}
+/*FIN SOBRE NOSOTROS */
+/* CONTACTO */
+.principalContacto{
+    width: 100%;
+    height: 110vh;
+    background-position: bottom;
+    background-size: 100% 300px;
+}
+.principalContacto .Textocontacto {
+    text-align: center;
+}
+.principalContacto span i{
+    font-size: 1.5em;    
+}
+.principalContacto span{
+    padding-bottom: 2%;      
+}
+/*FIN CONTACTO */
+/* POSVENTA */
+.principalPosventa{
+    display: grid;
+    width: 100%;
+    height: 130vh;
+    text-align: center;
+    justify-content: center;
+    
+}  
+.principalPosventa form{
+    margin-top:5% ;
+}
+.principalPosventa h2{
+    font-size: 2em;                
+}
+.principalPosventa form label, input[type="email"], input[type="number"], input[type="text"] {
+    font-size: 1.5em;                           
+}
+.principalPosventa input[type="file"]{
+    font-size: 1em;
+    width:60%;
+}
+.principalPosventa textarea{
+    height:10em;
+    font-size: 1.5em;
+}
+.principalPosventa #enviar{
+    font-size: 1.5em;
+}
+.principalPosventa #borrar{
+    font-size: 1.5em;
+}
+/*FIN POSVENTA */
+}
 @media only screen and (min-width:3839px)
 {
     *{
@@ -823,4 +948,5 @@ html{
     }
     /*FIN BOTON SUBIR */
 }
+
 /*FIN MEDIA QUERIES */
