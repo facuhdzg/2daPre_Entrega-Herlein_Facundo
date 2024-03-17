@@ -26,3 +26,21 @@
     margin:0;
     padding:0;
 }
+
+@mixin hover($color,$sombra,$transformacion){
+    color: $color;
+    text-shadow: $sombra;
+    transform: $transformacion;
+}
+
+@mixin active($color,$sombra,$transformacion){
+    color: $color;
+    text-shadow: $sombra;
+    transform: $transformacion;
+}
+
+@mixin hoverProd($color,$sombra,$transformacion){
+    color: $color;
+    text-shadow: $sombra;
+    transform: $transformacion;    
+}

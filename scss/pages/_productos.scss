@@ -23,12 +23,24 @@
         text-align: center;
         .item{
             margin-top: 2em;
+            transition: transform 0.3s;
+            &:hover{
+                @include hoverProd(none,-5px 5px 3px white,scale(1.01));
+             }             
             a{
                 text-decoration: none;
                 color: black;
                 font-weight: 500;
-                img{
-                    width:15em;        
+                transition: transform 0.3s;
+                &:hover{
+                   @include hoverProd(black,-5px 5px 3px white,none);
+                }
+                img{                    
+                    width:15em;
+                    &:hover{
+                        background-color: white;
+                        border-radius: 20px;                        
+                    }        
                 }
             }
         }        

@@ -10,8 +10,21 @@
     text-align: center;
     line-height: 40px;    
     font-size: 32px;
+    transition: transform 0.3s;
+    &:hover{
+        @include hover(none,none,scale(1.3));            
+    }
+    &:active{
+        @include active(black,none,scale(0.9));
+    }   
     i{    
         color: black;
+        &:hover{
+            @include hover(white,none,none);            
+        }
+        &:active{
+            @include active(black,none,none);
+        }
     }    
 }
 /*FIN BOTON SUBIR */

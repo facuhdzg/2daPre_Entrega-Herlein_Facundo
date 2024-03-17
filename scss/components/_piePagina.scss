@@ -24,10 +24,20 @@
         grid-area:redes;
         @extend %tamanio;        
         letter-spacing: 0.5em;        
-        font-size: 1.2em;        
+        font-size: 1.2em;
+                
         a{    
             text-decoration: none;
-            color:black;
+            color:black;            
+            i{
+                transition: transform 0.5s ;                
+                &:hover{                    
+                    @include hover(white,-2px 4px 3px black,scale(1.2));                    
+                }
+                &:active{                    
+                    @include active(black,none,scale(1));
+                }   
+            }
         }
     }
     .derechos{

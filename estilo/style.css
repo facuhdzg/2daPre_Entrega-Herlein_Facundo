@@ -51,6 +51,17 @@ html {
 }
 .navbar .navbar-nav .nav-item {
   color: white;
+  transition: transform 0.2s;
+}
+.navbar .navbar-nav .nav-item:hover {
+  color: black;
+  text-shadow: -3px 3px 2.5px black;
+  transform: scale(1.1);
+}
+.navbar .navbar-nav .nav-item:active {
+  color: white;
+  text-shadow: -3px 3px 2.5px black;
+  transform: scale(1);
 }
 .navbar .d-flex .btn {
   color: white;
@@ -85,6 +96,19 @@ html {
 .pie .redes a {
   text-decoration: none;
   color: black;
+}
+.pie .redes a i {
+  transition: transform 0.5s;
+}
+.pie .redes a i:hover {
+  color: white;
+  text-shadow: -2px 4px 3px black;
+  transform: scale(1.2);
+}
+.pie .redes a i:active {
+  color: black;
+  text-shadow: none;
+  transform: scale(1);
 }
 .pie .derechos {
   display: flex;
@@ -133,9 +157,30 @@ html {
   text-align: center;
   line-height: 40px;
   font-size: 32px;
+  transition: transform 0.3s;
+}
+.subir:hover {
+  color: none;
+  text-shadow: none;
+  transform: scale(1.3);
+}
+.subir:active {
+  color: black;
+  text-shadow: none;
+  transform: scale(0.9);
 }
 .subir i {
   color: black;
+}
+.subir i:hover {
+  color: white;
+  text-shadow: none;
+  transform: none;
+}
+.subir i:active {
+  color: black;
+  text-shadow: none;
+  transform: none;
 }
 
 /*FIN BOTON SUBIR */
@@ -165,14 +210,30 @@ html {
 }
 .principalP .productos .item {
   margin-top: 2em;
+  transition: transform 0.3s;
+}
+.principalP .productos .item:hover {
+  color: none;
+  text-shadow: -5px 5px 3px white;
+  transform: scale(1.01);
 }
 .principalP .productos .item a {
   text-decoration: none;
   color: black;
   font-weight: 500;
+  transition: transform 0.3s;
+}
+.principalP .productos .item a:hover {
+  color: black;
+  text-shadow: -5px 5px 3px white;
+  transform: none;
 }
 .principalP .productos .item a img {
   width: 15em;
+}
+.principalP .productos .item a img:hover {
+  background-color: white;
+  border-radius: 20px;
 }
 
 /*Principal PRODUCTOS */
@@ -214,6 +275,16 @@ html {
   font-size: 1.5em;
   margin: 2%;
 }
+.principalContacto span a:hover {
+  color: white;
+  text-shadow: -3px 3px 2.5px black;
+  transform: none;
+}
+.principalContacto span a:active {
+  color: black;
+  text-shadow: none;
+  transform: none;
+}
 
 /* FIN PRINCIPAL CONTACTO */
 /* PRINCIPAL POSVENTA */
@@ -229,6 +300,10 @@ html {
   margin-bottom: 3%;
   font-weight: bold;
 }
+.principalPosventa input:focus {
+  background-color: white;
+  transform: scale(1.1);
+}
 .principalPosventa input[type=file] {
   width: 100%;
   height: none;
@@ -239,6 +314,36 @@ html {
   height: none;
   background-color: rgb(255, 235, 235);
 }
+.principalPosventa textarea:focus {
+  background-color: white;
+}
+.principalPosventa #enviar {
+  transition: transform 0.2s;
+}
+.principalPosventa #enviar:hover {
+  color: white;
+  text-shadow: -5px 3px 2.5px black;
+  transform: scale(1.1);
+}
+.principalPosventa #enviar:active {
+  color: black;
+  text-shadow: none;
+  transform: scale(0.9);
+}
+.principalPosventa #borrar {
+  transition: transform 0.2s;
+}
+.principalPosventa #borrar:hover {
+  color: white;
+  text-shadow: -5px 3px 2.5px black;
+  transform: scale(1.1);
+}
+.principalPosventa #borrar:active {
+  color: black;
+  text-shadow: none;
+  transform: scale(0.9);
+}
+
 /*FIN PRINCIPAL POSVENTA */
 /* MEDIA QUERIES */
 @media only screen and (min-width: 400px) and (max-width: 598px) {

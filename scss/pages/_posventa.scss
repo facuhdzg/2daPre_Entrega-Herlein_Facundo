@@ -11,6 +11,10 @@
     }
     input{        
         @extend %camposPosventa;
+        &:focus{            
+            background-color: white;
+            transform: scale(1.1);
+        }
     }
     input[type="file"]{
         @extend %camposPosventa;       
@@ -20,12 +24,29 @@
     textarea{
         @include tamanio(100%,none); 
         background-color: rgb(255, 235, 235);
+        &:focus{            
+            background-color: white;            
+        }
     }
     #enviar{
        @extend %botonForm;
+       transition: transform 0.2s;
+       &:hover{            
+        @include hover(white,-5px 3px 2.5px black,scale(1.1));
+       }
+       &:active{
+        @include active(black,none,scale(0.9));           
+    }
     }
     #borrar{
         @extend %botonForm;
+        transition: transform 0.2s;
+        &:hover{            
+            @include hover(white,-5px 3px 2.5px black,scale(1.1));
+        }
+        &:active{
+            @include active(black,none,scale(0.9));           
+        }
     }
 }
 /*FIN PRINCIPAL POSVENTA */
