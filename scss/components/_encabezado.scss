@@ -1,0 +1,23 @@
+/* ENCABEZADO */
+.navbar{
+    background-color:$colorHeader;
+    .navbar-brand{
+        color:white;
+        span{
+            color:red;
+            font-size: 1.1em;
+            font-weight: 500;    
+        }        
+    }
+    .navbar-nav{
+        .nav-item {
+            color: white;    
+        }
+    }
+    .d-flex{
+        .btn{
+            color: white;
+        }
+    }
+} 
+/*FIN ENCABEZADO */

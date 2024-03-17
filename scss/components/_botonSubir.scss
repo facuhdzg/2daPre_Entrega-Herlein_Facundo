@@ -1,0 +1,17 @@
+/* BOTON SUBIR */
+.subir{    
+    position:fixed;
+    right:24px;
+    bottom: 52px;
+    width:40px;
+    height:40px;
+    background-color: $colorHeader;    
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;    
+    font-size: 32px;
+    i{    
+        color: black;
+    }    
+}
+/*FIN BOTON SUBIR */

@@ -1,0 +1,25 @@
+/* Principal INDEX */
+.principal{
+    display: grid;
+    width: 100%;
+    height: 94vh;
+    background-color:$colorPrincipal;
+    align-items: center;
+    justify-items: center;
+    background-image: url(../img/publicidad-1.jpg),url(https://flex.f6s.com/content-resource/media/946526.jpg);
+    background-size: 100% auto, 100% 150px;
+    background-repeat: no-repeat;
+    background-position: center top,center bottom;
+    .carousel{    
+        width:100%;
+        height: 15em;
+        margin-bottom: 20%;
+        .carousel-inner{
+            img{
+                width: 100%;
+                height: 15em;                
+            }
+        }
+    } 
+} 
+/*FIN Principal INDEX */
