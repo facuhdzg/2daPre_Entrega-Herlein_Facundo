@@ -79,7 +79,7 @@
         grid-template-rows:1.5fr repeat(2,1fr) ;
         .ubicacion{
             width: 100%;
-            height: 100%;
+            height: 100%;            
             justify-content: center;
             align-self: center;
             iframe{
@@ -134,7 +134,7 @@
                 margin-left: 10%;                     
                 font-size: 30px;                 
             }
-            #enviar{           
+            #enviar{               
                 margin:0;
                 height: 50px ;
                 width:200px ;           
@@ -189,7 +189,7 @@
         background-position: center top, center 750px;
         .carousel{            
             padding: 0%;
-            margin: 0%;
+            margin: 0%;                     
             width: 100%;                               
         }
     }

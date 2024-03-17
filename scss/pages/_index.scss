@@ -2,10 +2,9 @@
 .principal{
     display: grid;
     width: 100%;
-    height: 94vh;
-    background-color:$colorPrincipal;
-    align-items: center;
-    justify-items: center;
+    height: 94vh;    
+    background-color:$colorPrincipal;    
+    @extend %alineacion;
     background-image: url(../img/publicidad-1.jpg),url(https://flex.f6s.com/content-resource/media/946526.jpg);
     background-size: 100% auto, 100% 150px;
     background-repeat: no-repeat;

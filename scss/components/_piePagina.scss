@@ -1,6 +1,6 @@
 /* FOOTER */
 .pie{
-    display: grid;
+    display: grid;    
     width: 100%;
     height: 300px;
     background-color: $colorPrincipal;
@@ -14,19 +14,16 @@
     .ubicacion{
         display: flex;   
         grid-area:ubic;
-        width: 100%;
-        height: 100%;
+        @extend %tamanio;
         align-items: center;        
         iframe{
-            width: 100%;
-            height: 100%;
+            @extend %tamanio;
         }     
     }
     .redes{
         display: flex;
         grid-area:redes;
-        width: 100%;
-        height: 100%;
+        @extend %tamanio;        
         letter-spacing: 0.5em;
         justify-content:center;
         align-items: center;
@@ -39,8 +36,7 @@
     .derechos{
         display: flex;      
         grid-area:derechos;
-        width: 100;
-        height: 100%;
+        @extend %tamanio;
         align-items: center; 
         justify-content: center;
         h2{

@@ -10,43 +10,23 @@
         margin-bottom: 3%;
         font-weight: bold;        
     }
-    input{
-        background-color: transparent;
-        border-style:none;
-        border-bottom-style: solid;
-        color:black;
+    input{        
+        @extend %camposPosventa;
     }
     input[type="file"]{
-        background-color: transparent;
+        @extend %camposPosventa;        
         width:100%;    
-        font-size: 0.9em;
-        border-style:none;
-        border-bottom-style: solid;
-        color:black;
+        font-size: 0.9em;        
     }
     textarea{
         width:100%;
         background-color: rgb(255, 235, 235);
     }
     #enviar{
-        border-style: solid;
-        border-color:black;
-        width:128px;
-        height: 32px;
-        background-color: $colorHeader;
-        font-weight: 500;
-        border-radius: 10px;
-        margin-left: 6%;
+       @extend %botonForm;
     }
     #borrar{
-        border-style: solid;
-        border-color:black;
-        width:128px;
-        height: 32px;
-        background-color: $colorHeader;
-        font-weight: 500;
-        border-radius: 10px;
-        margin-right: 6%;
+        @extend %botonForm;
     }
 }
 /*FIN PRINCIPAL POSVENTA */

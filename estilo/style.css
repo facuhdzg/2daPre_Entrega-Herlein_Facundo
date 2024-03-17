@@ -1,12 +1,40 @@
 /* --colorFiltros:rgb(55, 65, 55); */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.principal {
+  justify-items: center;
+  align-items: center;
+}
+
+.principalPosventa #borrar, .principalPosventa #enviar {
+  border-style: solid;
+  border-color: black;
+  width: 128px;
+  height: 32px;
+  background-color: rgb(138, 226, 79);
+  font-weight: 500;
+  border-radius: 10px;
+  margin-left: 6%;
+}
+
+.principalPosventa input[type=file], .principalPosventa input {
+  background-color: transparent;
+  border-style: none;
+  border-bottom-style: solid;
+  color: black;
+}
+
+.pie .derechos, .pie .redes, .pie .ubicacion iframe, .pie .ubicacion {
+  width: 100%;
+  height: 100%;
 }
 
 /* ENCABEZADO */
@@ -43,19 +71,11 @@ html {
 .pie .ubicacion {
   display: flex;
   grid-area: ubic;
-  width: 100%;
-  height: 100%;
   align-items: center;
-}
-.pie .ubicacion iframe {
-  width: 100%;
-  height: 100%;
 }
 .pie .redes {
   display: flex;
   grid-area: redes;
-  width: 100%;
-  height: 100%;
   letter-spacing: 0.5em;
   justify-content: center;
   align-items: center;
@@ -68,8 +88,6 @@ html {
 .pie .derechos {
   display: flex;
   grid-area: derechos;
-  width: 100;
-  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -85,8 +103,6 @@ html {
   width: 100%;
   height: 94vh;
   background-color: rgb(241, 213, 213);
-  align-items: center;
-  justify-items: center;
   background-image: url(../img/publicidad-1.jpg), url(https://flex.f6s.com/content-resource/media/946526.jpg);
   background-size: 100% auto, 100% 150px;
   background-repeat: no-repeat;
@@ -211,45 +227,14 @@ html {
   margin-bottom: 3%;
   font-weight: bold;
 }
-.principalPosventa input {
-  background-color: transparent;
-  border-style: none;
-  border-bottom-style: solid;
-  color: black;
-}
 .principalPosventa input[type=file] {
-  background-color: transparent;
   width: 100%;
   font-size: 0.9em;
-  border-style: none;
-  border-bottom-style: solid;
-  color: black;
 }
 .principalPosventa textarea {
   width: 100%;
   background-color: rgb(255, 235, 235);
 }
-.principalPosventa #enviar {
-  border-style: solid;
-  border-color: black;
-  width: 128px;
-  height: 32px;
-  background-color: rgb(138, 226, 79);
-  font-weight: 500;
-  border-radius: 10px;
-  margin-left: 6%;
-}
-.principalPosventa #borrar {
-  border-style: solid;
-  border-color: black;
-  width: 128px;
-  height: 32px;
-  background-color: rgb(138, 226, 79);
-  font-weight: 500;
-  border-radius: 10px;
-  margin-right: 6%;
-}
-
 /*FIN PRINCIPAL POSVENTA */
 /* MEDIA QUERIES */
 @media only screen and (min-width: 400px) and (max-width: 598px) {
