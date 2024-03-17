@@ -604,6 +604,15 @@ html {
     height: 240px;
   }
   /*FIN PRODUCTOS*/
+  /*SOBRE NOSOTROS*/
+  .principalSobreNosotros {
+    width: 100%;
+    height: 80vh;
+  }
+  .principalSobreNosotros #Texto {
+    font-size: 22px;
+  }
+  /*FIN SOBRE NOSOTROS*/
   /* CONTACTO */
   .principalContacto {
     font-size: 22px;

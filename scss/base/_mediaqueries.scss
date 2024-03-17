@@ -275,10 +275,9 @@
                 font-size: 1.3em;
                 text-align: center;
                 line-height: 25px;
-                color: white;
+                color: white;                
             }
-        }
-        
+        }        
         .d-flex{
             .btn{
                 color: white;
@@ -353,6 +352,14 @@
         }
     } 
     /*FIN PRODUCTOS*/
+    /*SOBRE NOSOTROS*/
+    .principalSobreNosotros{
+        @include tamanio(100%,80vh);       
+        #Texto{
+            font-size: 22px;
+        }
+    }
+    /*FIN SOBRE NOSOTROS*/
     /* CONTACTO */
     .principalContacto{
         font-size: 22px;
