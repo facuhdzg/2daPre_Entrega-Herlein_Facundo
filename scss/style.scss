@@ -1,0 +1,17 @@
+@import'base/variables';
+@import'base/general';
+
+@import'components/encabezado';
+@import'components/PiePagina';
+@import'pages/index.scss';
+
+@import'components/botonSubir';
+@import'pages/productos.scss';
+
+@import'pages/sobreNosotros';
+
+@import'pages/reservaContacto';
+
+@import'pages/posventa';
+
+@import'base/mediaqueries';

@@ -1,0 +1,12 @@
+/* SOBRE NOSOTROS */
+.principalSobreNosotros{
+    display:grid;
+    background-color: $colorPrincipal;
+    padding: 5%;
+
+    .SNlogo{
+        justify-self: center;
+        margin-bottom: 5%;    
+    }
+}
+/*FIN SOBRE NOSOTROS */

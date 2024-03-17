@@ -1,0 +1,52 @@
+/* PRINCIPAL POSVENTA */
+.principalPosventa{
+    display:grid;
+    width: 100%;
+    height: 100vh;
+    background-color: $colorPrincipal;
+    padding:2%;
+    padding-bottom: 40%;
+    label{
+        margin-bottom: 3%;
+        font-weight: bold;        
+    }
+    input{
+        background-color: transparent;
+        border-style:none;
+        border-bottom-style: solid;
+        color:black;
+    }
+    input[type="file"]{
+        background-color: transparent;
+        width:100%;    
+        font-size: 0.9em;
+        border-style:none;
+        border-bottom-style: solid;
+        color:black;
+    }
+    textarea{
+        width:100%;
+        background-color: rgb(255, 235, 235);
+    }
+    #enviar{
+        border-style: solid;
+        border-color:black;
+        width:128px;
+        height: 32px;
+        background-color: $colorHeader;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-left: 6%;
+    }
+    #borrar{
+        border-style: solid;
+        border-color:black;
+        width:128px;
+        height: 32px;
+        background-color: $colorHeader;
+        font-weight: 500;
+        border-radius: 10px;
+        margin-right: 6%;
+    }
+}
+/*FIN PRINCIPAL POSVENTA */

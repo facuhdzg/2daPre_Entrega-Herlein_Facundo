@@ -1,0 +1,979 @@
+/* MEDIA QUERIES */
+@media only screen and (min-width: 400px) and (max-width:598px) {
+    /* PAGINA PRINCIPAL */
+    .principal{
+        background-size: 100% 200px;
+        width:100%;
+        height: 100vh;
+        background-position: center top,center 47em;
+        .carousel{    
+            width:100%;
+            height: 20em;
+            margin-bottom: 20%;
+            .carousel-inner{
+                img{
+                    width: 100%;
+                    height: 20em;        
+                }
+            }    
+        }
+    }     
+    /*FIN PAGINA PRINCIPAL */    
+    /* RESERVA Y CONTACTO */
+    .principalContacto{
+        background-size: 100% 200px;
+        padding-bottom: 70%;
+        span{
+            font-size: 1.3em;
+        }        
+    }
+    /*FIN RESERVA Y CONTACTO */
+    /* POSVENTA */
+    .principalPosventa{ 
+        fieldset{
+            margin-top: 3%;
+            label{
+                padding-bottom: 2%;
+                font-size: 1.3em;
+            }
+            textarea{
+                width:100%;
+            }
+            #borrar{
+                width:160px;
+                height: 48px;
+            }
+            #enviar{
+                width:160px;
+                height: 48px;        
+            }
+        }
+    }
+    /*FIN POSVENTA */
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px)
+{
+    /* PRINCIPAL */
+    .principal{
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 225px ,100% 200px;
+        background-position: center top,center 780px ;
+        .carousel{
+            width:100%;
+            margin-top: 20%;
+            height:25em;
+            img{
+                width: 100%;
+                height: 35em;
+            }
+        }
+    }    
+    /*FIN PRINCIPAL */
+    /* PIE DE PAGINA */
+    .pie{
+        width:100%;
+        height: 30em;        
+        padding: 2%;
+        grid-template-rows:1.5fr repeat(2,1fr) ;
+        .ubicacion{
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-self: center;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }       
+        }
+        .redes{            
+            font-size: 2em;
+            padding-top:29px;
+        }
+    }
+    /*FIN PIE DE PAGINA */
+    /* PRODUCTOS */
+    .principalP{
+        width: 100%;
+        .productos{
+            .item{
+                margin-top: 10%;
+                img{
+                    width: 300px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+    /*FIN PRODUCTOS */
+    /* CONTACTO */
+    .principalContacto{
+        background-position: center 40em;
+        background-size: 100% 300px;         
+        span{
+            font-size: 1.1em; 
+        }                                       
+        .Textocontacto{
+            font-size: 2em;
+            font-weight: 500;
+        }
+    }     
+    /*FIN CONTACTO */
+    /* POSVENTA */
+    .principalPosventa{
+        padding-top: 5%;
+        width: 100%;
+        height: 100%;
+        form{
+            padding-top: 10%;
+            #borrar{
+                margin-top: 2%;
+                height: 50px;
+                width:200px ;
+                margin-left: 10%;                     
+                font-size: 30px;                 
+            }
+            #enviar{           
+                margin:0;
+                height: 50px ;
+                width:200px ;           
+                font-size: 30px;
+            }
+            input[type="text"],input[type="number"],input[type="email"]{
+                width: 70%;
+            }
+            textarea{
+                width:100%;
+            }
+        }
+
+    }   
+    /*FIN POSVENTA */    
+
+}
+
+@media only screen and (min-width:800px) and (max-width:1020px)
+{
+    /* HEADER */
+    .navbar{
+        .navbar-brand{ 
+            color:white;
+            font-size: 1.5em;
+            span{
+                color:red;
+                font-size: 1em;
+                font-weight: 500;    
+            }
+        }
+        
+        .navbar-nav{
+            .nav-item {
+                color: white;
+                font-size: 1.2em;    
+            }
+        } 
+        .d-flex{
+            .btn{
+                color: white;
+                font-size: 1em;
+            }
+        }
+    }    
+    /*FIN HEADER */
+    /* PRINCIPAL */
+    .principal{
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 300px, 100% 250px;
+        background-position: center top, center 750px;
+        .carousel{            
+            padding: 0%;
+            margin: 0%;
+            width: 100%;                               
+        }
+    }
+    /*FIN PRINCIPAL */
+    /* PIE DE PAGINA */
+    .pie{
+        width:100%;
+        height: 100%;        
+        grid-template-rows: 280px 50px 80px;
+        padding: 0;
+        margin: 0;        
+        .ubicacion{
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            iframe{
+                width:90%;
+                height: 100%;
+            }               
+        }
+        .redes{
+            font-size:32px;
+            height: 100%;
+            padding-top: 2%;                
+        }
+        .derechos{ 
+            width: 100%;
+            height: 100%;       
+            font-size: 1.2em;
+            margin: 0;
+            h2{
+                margin: 0;
+            }       
+        }
+    }
+    /*FIN PIE DE PAGINA */
+    /* PRODUCTOS */
+    .principalP{
+        .productos{
+            display: grid;
+            width: 100%;
+            height: auto;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(12,1fr);
+            padding: 5%;
+        }
+    }     
+    /*FIN PRODUCTOS */
+    /* SOBRE NOSOTROS */
+    .principalSobreNosotros{
+        .SNlogo{
+            img{
+                width:300px;
+                height: 300px;
+                
+            }
+        }
+    } 
+    /*FIN SOBRE NOSOTROS */
+    /* CONTACTO */
+    .principalContacto{
+        background-position: 100% 35em;
+        background-size: 100% 300px;
+        padding-bottom: 70%;
+    }
+    /*FIN CONTACTO */
+    /*POSVENTA*/
+    .principalPosventa{
+        padding-top: 5%;
+        width: 100%;
+        height: 100%;
+        form{
+            font-size: 22px;
+            padding-top: 6%;
+            #borrar{
+                margin-top: 2%;
+                height: 50px;
+                width:250px ;
+                margin-left: 14%;                     
+                font-size: 30px;                 
+            }
+            #enviar{           
+                margin:0;
+                height: 50px ;
+                width:250px ;           
+                font-size: 30px;
+            }
+            input[type="text"],input[type="number"],input[type="email"]{
+                width: 70%;
+            }
+            textarea{
+                width:100%;
+                height: 300px;
+            }
+        }
+
+    }   
+    /*FIN POSVENTA*/
+}
+@media only screen and (min-width:1024px) and (max-width:1498px)
+{
+    /* HEADER */
+    .navbar{
+        .navbar-brand{
+            color:white;
+            span{
+                color:red;
+                font-size: 1.1em;
+                font-weight: 500;    
+            }
+        }   
+        .navbar-nav {
+            .nav-item{
+                margin-left: 20px;
+                font-size: 1.3em;
+                text-align: center;
+                line-height: 25px;
+                color: white;
+            }
+        }
+        
+        .d-flex{
+            .btn{
+                color: white;
+            }
+        }
+    }   
+    /* FIN HEADER */
+    /* PIE DE PAGINA */
+    .pie{
+        display: grid;
+        grid-template-columns: 2fr 3.5fr;
+        grid-template-rows: repeat(2,100px);
+        grid-template-areas: 
+        "ubic redes"
+        "ubic derechos";
+        width:100%;
+        height: 200px;
+        padding:0;
+        padding-left: 2%;
+        .ubicacion{
+            height: 200px;
+            padding: 0;
+            margin: 0;
+            iframe{        
+                height: 170px;
+                padding: 0;
+            }
+        }
+        .redes{
+            padding:0;
+            font-size: 1.7em;
+            align-items: flex-end;
+        }
+        .derechos{
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            align-items: flex-end;
+        }
+    }    
+    /*FIN PIE DE PAGINA */
+    /* PRINCIPAL */
+    .principal{
+        width: 100%;
+        height: 1400px;
+        background-size: 90% 300px, 100% 240px;
+        .carousel{
+            width: 80%;
+            height: 20em;
+            margin-bottom: 30%;
+            .carousel-inner{
+                width:100%;
+                height: 300px;
+                .carousel-item{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+        }
+    }    
+    /*FIN PRINCIPAL */
+    /*PRODUCTOS*/
+    .principalP{
+        .productos{
+            display: grid;
+            width: 100%;
+            height: auto;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(12,1fr);
+            padding: 5%;
+            .item{
+                img{
+                    width:240px;
+                    height: 240px;
+                }
+            }
+        }
+    } 
+    /*FIN PRODUCTOS*/
+    /* CONTACTO */
+    .principalContacto{
+        font-size: 22px;
+        padding-bottom: 45%;
+        background-size: 100% 300px;
+        background-position: center 30em;
+    }
+    /*FIN CONTACTO */
+    /* POSVENTA */
+    .principalPosventa{
+        width:100%;
+        height: 100%;
+        form{
+            font-size: 22px;
+            padding-top: 6%;
+            #borrar{
+                margin-top: 2%;
+                height: 50px;
+                width:300px ;
+                margin-left: 15%;                     
+                font-size: 30px;                 
+            }
+            #enviar{           
+                margin:0;
+                height: 50px ;
+                width:300px ;           
+                font-size: 30px;
+            }
+            input[type="text"],input[type="number"],input[type="email"]{
+                width: 70%;
+            }
+            textarea{
+                width:100%;
+                height: 300px;
+            }
+        }
+    }
+    /*FIN POSVENTA */
+}
+@media only screen and (min-width:1500px) and (max-width: 1919px)
+{
+    /* FOOTER */
+    .pie{
+        display: grid;
+        width: 100%;
+        height: 300px;
+        grid-template-rows: 200px 50px 50px;
+        margin: 0;
+        padding: 0;
+        .redes{
+            font-size: 2em;
+            align-items: center;                           
+        }
+        .ubicacion{
+            justify-content:center;
+            margin-bottom: 2%; 
+            iframe{
+                width:90%;
+                height: 95%;                                  
+            }
+        }
+        .derechos{
+            padding:0;
+            margin: 0;            
+            width: 100%;
+            height: 50px;
+            h2{
+                padding: 0;
+                margin:0;               
+            }
+        }        
+    }    
+    /*FIN FOOTER */
+    /* PRINCIPAL */
+    .principal{
+        background-size: 80% 300px, 100% 300px;
+        height: 1500px;
+        background-position: center top, center 1100px;
+        .carousel{
+            width:70%;
+            height:25em;
+            .carousel-inner{
+                width:100%;
+                height: 400px;
+                .carousel-item{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }    
+    /*FIN PRINCIPAL */
+    /* PRODUCTOS */
+    .principalP{
+        .productos{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(8,1fr);
+            .item{
+                img{
+                    width: 240px;
+                    height: 240px;
+                }
+            }
+        }
+    } 
+    /* PRODUCTOS */
+    /* SOBRE NOSOTROS */
+    .principalSobreNosotros{
+        .SNlogo{
+            img{
+                width:500px;
+                height: 400px;
+            }
+        }
+    }  
+    /*FIN SOBRE NOSOTROS */
+    /* CONTACTO */
+    .principalContacto{
+        padding: 0;
+        margin:0;
+        padding-bottom: 25%;
+        background-size: 100% 300px;
+        background-position: center 38em;
+        .Textocontacto{
+            padding: 2%;
+            text-align: center;
+        }
+    }
+    /*FIN CONTACTO */
+    /*POSVENTA*/
+    .principalPosventa{
+        width:100%;
+        height: 110vh;
+        justify-content: center;
+        fieldset{            
+            justify-self: center;
+            width:80%;
+            form{
+                width: 100%;
+                font-size: 20px;
+                padding-top: 6%;                
+                #borrar{
+                    margin-top: 2%;
+                    height: 50px;
+                    width:300px ;
+                    margin-left: 10%;                     
+                    font-size: 30px;                 
+                }
+                #enviar{           
+                    margin:0;
+                    height: 50px ;
+                    width:300px ;           
+                    font-size: 30px;
+                }
+                input[type="text"],input[type="number"],input[type="email"]{
+                    width: 60%;
+                }
+                textarea{
+                    width:90%;
+                    height: 300px;
+                }
+            }
+        }
+        
+    }
+    /*FIN POSVENTA*/
+}
+@media only screen and (min-width:1920px) and (max-width:3837px){
+/* HEADER */
+.navbar{    
+    .collapse{
+        padding-left: 15%;        
+        .navbar-nav{
+            font-size: 22px;
+        }
+        .d-flex{
+            .btn{
+                width:100px;
+                height: 30px;    
+                font-size: 1.2em;
+                line-height: 5px;           
+            }
+            .form-control{
+                width: 25em;
+                height: 2em;
+                font-size: 1em;        
+            } 
+        }
+    }
+    
+}
+/*FIN HEADER */
+/* FOOTER */
+.pie{       
+    width: 100%;
+    height: 250px;
+    grid-template-rows: 150px 50px 50px ;
+    margin: 0;
+    padding: 0;
+    .redes {
+        font-size: 2em;
+        letter-spacing: 1em;
+    }
+    .derechos{        
+        font-size: 1.2em;
+        padding-bottom: 1%;
+        h2{
+            margin:0;
+            padding: 0;
+        }
+    }
+    .ubicacion {
+        width:100%;
+        height:150px;
+        justify-content: center;        
+        iframe{
+            width:90%;
+            height: 90%;            
+        }
+    }    
+}
+/*FIN FOOTER */
+/* PRINCIPAL */
+.principal{
+    width: 100%;
+    height: 160vh;
+    background-size: 75% 350px ,100% 300px;
+    .carousel{        
+        width:50%;
+        height:25em;
+        .carousel-inner{
+            width:100%;
+            height: 400px;
+            .carousel-item{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+/*FIN PRINCIPAL */
+/* PRODUCTOS */
+.principalP{
+    .productos {
+        grid-gap:10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(8,1fr);       
+        .item{
+            a{
+                width:100%;
+                height:100%;
+                img{
+                    width:400px;
+                    height:400px;
+                }
+                p{
+                    font-size: 1.5em;
+                }
+            }
+            
+        }
+    }
+}     
+/*FIN PRODUCTOS */
+/* SOBRE NOSOTROS */
+.principalSobreNosotros{
+    .SNlogo{
+        img{
+            width: 400px;
+            height:400px;
+        }
+    }
+    #Texto{
+        font-size: 1.3em;
+    }
+}
+/*FIN SOBRE NOSOTROS */
+/* CONTACTO */
+.principalContacto{
+    width: 100%;
+    height: 100vh;
+    padding: 0;    
+    background-position: center 550px;
+    background-size: 100% 300px;
+    padding-bottom: 25%;
+    .Textocontacto {
+        text-align: center;
+        padding: 1%;
+    }
+    span{
+        padding: 0;        
+        margin: 0;
+        i{
+            font-size: 1.5em;    
+        }      
+    }
+}
+/*FIN CONTACTO */
+/* POSVENTA */
+.principalPosventa{
+    display: grid;
+    width: 100%;
+    height: 130vh;
+    text-align: center;
+    justify-content: center;
+    h2{
+        font-size: 2em;                
+    }
+    fieldset{
+        form{
+            margin-top:5% ;
+            label, input[type="email"], input[type="number"], input[type="text"] {
+                font-size: 1.5em; 
+                width: 60%;                          
+            }
+            input[type="file"]{
+                font-size: 1em;
+                width:70%;
+            }
+            textarea{
+                height:10em;
+                font-size: 1.5em;
+            }
+            #enviar{
+                font-size: 1.5em;
+                height: 50px;
+                width: 250px;
+            }
+            #borrar{
+                font-size: 1.5em;
+                height: 50px;
+                width: 250px;
+            }
+        }
+    }
+    
+}
+/*FIN POSVENTA */
+}
+@media only screen and (min-width:3839px)
+{
+    *{
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    /* HEADER */
+    .navbar{
+        .navbar-brand{
+            color:white;
+            font-size: 3em;
+            span{       
+                font-weight: 500;
+                font-size: 1em;    
+            }
+        }
+        .collapse{
+            padding-left: 15%;
+            height:110px;
+            width: 100%;
+            .navbar-nav{                                                              
+                .nav-item {                                                    
+                    color: white;
+                    font-size: 2.9em;                                
+                }
+            }
+            .d-flex{
+                .btn{
+                    width:8em;
+                    height: 1.6em;
+                    color: white;
+                    font-size: 2.5em;
+                    line-height: 20px;        
+                }
+                .form-control{
+                    width: 25em;
+                    height: 2em;
+                    font-size: 2em;        
+                }
+            }
+        }
+    }
+    /*FIN HEADER */
+
+    /* FOOTER */
+    .pie{
+        display: grid;
+        width: 100%;
+        height: 440px;        
+        grid-template-rows: 300px 70px 70px;
+        padding:0;
+        .redes{
+            font-size: 3.2em;
+            align-items: center;
+            //height: 190px;               
+        }
+        .derechos{             
+            width: 100%;
+            height: 100%;
+            font-size: 2em;
+            h2{
+                margin: 0;                
+            }          
+        } 
+        .ubicacion{
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            iframe{         
+                width: 90%;
+                height: 95%;            
+            }
+        }      
+    }     
+    /*FIN FOOTER */
+    /* PRINCIPAL */
+    .principal{
+        width: 100%;
+        height: 180vh;
+        background-color: $colorPrincipal;
+        background-size: 60% 800px, 100% 600px;
+        background-position: center top, center 150em;
+        .carousel{
+            margin-bottom:20%;            
+            width: 60%;
+            height: 65em;
+            .carousel-indicators{
+                button{
+                    width: 70px;
+                }
+            }
+            .carousel-inner{
+                width:100%;
+                height: 1200px;
+                .carousel-item{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }     
+    /*FIN PRINCIPAL */
+    /* PRODUCTOS */
+    .principalP{
+        .filtros {
+            .dropdown{
+                width: 60%;
+                padding-left: 5px;
+                button{
+                    height: 2em;
+                    font-size: 2em;       
+                }
+            }
+        }
+        .productos{
+            grid-gap:10px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(8,1fr);
+            .item{
+                a{
+                    width:100%;
+                    height:100%;
+                    img{
+                        width:800px;
+                        height:800px;
+                    }
+                    p{
+                        font-size: 35px;
+                    }
+                }                
+            }
+        }
+    }   
+    /*FIN PRODUCTOS */
+    /* SOBRE NOSOTROS */
+    .principalSobreNosotros{
+        #Texto{
+            font-size: 3em;
+        }
+        .SNlogo{
+            img{
+                width:500px;
+                height: 500px;
+            }
+        }
+    }
+    /*FIN SOBRE NOSOTROS */
+    /* CONTACTO */
+    .principalContacto{
+        padding: 0;
+        height: 100vh;
+        padding-bottom:25% ;        
+        background-position: center 80em;
+        background-size: 100% 600px;
+        .Textocontacto{
+            padding: 2%;
+            font-size: 4em;
+            text-align: center;
+        }
+        span{
+            font-size: 3em;
+            padding-bottom: 3%;
+        }
+    }     
+    /*FIN CONTACTO */
+    /* POSVENTA */
+    .principalPosventa{
+        display: grid;
+        width: 100%;
+        height: 130vh;
+        text-align: center;
+        justify-content: center;
+        h2{
+            font-size: 4em;                
+        }
+        fieldset{
+            width:100%;            
+            form{
+                margin-top:5% ;
+                label, input[type="email"], input[type="number"], input[type="text"] {
+                    font-size: 2.5em;
+                    width:70%;                           
+                }
+                input[type="file"]{
+                    font-size: 2em;
+                    width:80%;
+                }
+                textarea{
+                    height:15em;
+                    font-size: 2em;
+                    height: 600px;
+                }
+                #enviar{
+                    width:600px;
+                    height: 80px;
+                    font-size: 2.5em;
+                }
+                #borrar{
+                    width:600px;
+                    height: 80px;
+                    font-size: 2.5em;
+                }
+            }
+        }
+                
+    } 
+    /*FIN POSVENTA */
+    /* BOTON SUBIR */
+    .subir{    
+        position:fixed;
+        right:60px;
+        bottom: 100px;
+        width:80px;
+        height:80px;
+        background-color: $colorHeader;    
+        border-radius: 50%;
+        text-align: center;
+        line-height: 80px;    
+        font-size: 50px;
+        i{    
+            color: black;
+        }    
+    }    
+    /*FIN BOTON SUBIR */
+}
+
+/*FIN MEDIA QUERIES */
