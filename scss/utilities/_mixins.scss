@@ -1,0 +1,28 @@
+@mixin flex($display,$direccion,$justify,$align){
+    display:$display;
+    flex-direction: $direccion;
+    justify-content:$justify;
+    align-items: $align;
+}
+
+@mixin tamanio($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin fondo2($tamanio1,$tamanio2,$position1,$position2,$repeat){
+    background-size:$tamanio1 ,$tamanio2  ;
+    background-position:$position1,$position2  ;
+    background-repeat:$repeat;
+}
+
+@mixin fondo1($tamanio,$position,$repeat){
+    background-size:$tamanio;
+    background-position:$position;
+    background-repeat:$repeat;
+}
+
+@mixin margen{
+    margin:0;
+    padding:0;
+}

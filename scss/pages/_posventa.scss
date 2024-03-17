@@ -1,8 +1,7 @@
 /* PRINCIPAL POSVENTA */
 .principalPosventa{
-    display:grid;
-    width: 100%;
-    height: 100vh;
+    display:grid;    
+    @include tamanio(100%,100vh);
     background-color: $colorPrincipal;
     padding:2%;
     padding-bottom: 40%;
@@ -14,12 +13,12 @@
         @extend %camposPosventa;
     }
     input[type="file"]{
-        @extend %camposPosventa;        
-        width:100%;    
+        @extend %camposPosventa;       
+        @include tamanio(100%,none);    
         font-size: 0.9em;        
     }
     textarea{
-        width:100%;
+        @include tamanio(100%,none); 
         background-color: rgb(255, 235, 235);
     }
     #enviar{

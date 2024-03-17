@@ -1,22 +1,17 @@
 /* Principal INDEX */
 .principal{
-    display: grid;
-    width: 100%;
-    height: 94vh;    
+    display: grid;    
+    @include tamanio(100%,94vh);    
     background-color:$colorPrincipal;    
     @extend %alineacion;
     background-image: url(../img/publicidad-1.jpg),url(https://flex.f6s.com/content-resource/media/946526.jpg);
-    background-size: 100% auto, 100% 150px;
-    background-repeat: no-repeat;
-    background-position: center top,center bottom;
-    .carousel{    
-        width:100%;
-        height: 15em;
+    @include fondo2(100% auto,100% 150px,center top,center bottom,no-repeat);    
+    .carousel{        
+        @include tamanio(100%,15em);
         margin-bottom: 20%;
         .carousel-inner{
             img{
-                width: 100%;
-                height: 15em;                
+                @include tamanio(100%,15em);                              
             }
         }
     } 

@@ -1,13 +1,10 @@
 /* PRINCIPAL CONTACTO */
 .principalContacto{
-    display: grid;
-    width:100%;
-    height: 100vh;
+    display: grid;   
+    @include tamanio(100%,100vh); 
     background-color: $colorPrincipal;
     background-image: url(https://flex.f6s.com/content-resource/media/946526.jpg);
-    background-repeat: no-repeat;
-    background-position: center 49em ;
-    background-size: 100% 10em; 
+    @include fondo1(100% 10em,center 49em,no-repeat); 
     padding-bottom: 90%;
     .Textocontacto{
         padding:5%;
