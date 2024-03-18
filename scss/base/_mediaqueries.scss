@@ -94,6 +94,16 @@
         }
     }
     /*FIN PRODUCTOS */
+    /*SOBRE NOSOTROS*/
+    .principalSobreNosotros{               
+        .SNlogo{
+            @include tamanio(25em,13.08em);            
+            img{               
+                @include tamanio(25em,13.08em);                 
+            }
+        }
+    }
+    /*SOBRE NOSOTROS*/
     /* CONTACTO */
     .principalContacto{        
         @include fondo1(100% 300px,center 40em,no-repeat);         
@@ -214,10 +224,13 @@
     }     
     /*FIN PRODUCTOS */
     /* SOBRE NOSOTROS */
-    .principalSobreNosotros{
+    .principalSobreNosotros{       
         .SNlogo{
-            img{
-                @include tamanio(300px,300px);                
+            padding-top: 0%;
+            margin-bottom: 4%;
+            @include tamanio(37.5em,19.63em);
+            img{               
+                @include tamanio(37.5em,19.63em);               
             }
         }
     } 
@@ -355,10 +368,18 @@
     /*FIN PRODUCTOS*/
     /*SOBRE NOSOTROS*/
     .principalSobreNosotros{
-        @include tamanio(100%,80vh);       
+        @include tamanio(100%,100vh);
+        .SNlogo{
+            padding-top: 0%;
+            margin-bottom: 3%;
+            @include tamanio(50em,26.17em);
+            img{
+                @include tamanio(50em,26.17em);
+            }
+        }       
         #Texto{
             font-size: 22px;
-        }
+        }        
     }
     /*FIN SOBRE NOSOTROS*/
     /* CONTACTO */
@@ -459,9 +480,11 @@
     /* SOBRE NOSOTROS */
     .principalSobreNosotros{
         .SNlogo{
-            @include tamanio(500px,400px);
+            @include tamanio(75em,39.26em);
+            padding-top: 0%;
+            margin-bottom: 3%;
             img{            
-                @include tamanio(500px,400px);
+                @include tamanio(75em,39.26em);
             }
         }
     }  
@@ -605,8 +628,11 @@
 /* SOBRE NOSOTROS */
 .principalSobreNosotros{
     .SNlogo{
+        @include tamanio(75em,39.26em);
+        padding-top: 0%;
+        margin-bottom: 3%;
         img{
-            @include tamanio(400px,400px); 
+            @include tamanio(75em,39.26em);
         }
     }
     #Texto{
@@ -795,14 +821,16 @@
     /*FIN PRODUCTOS */
     /* SOBRE NOSOTROS */
     .principalSobreNosotros{
-        #Texto{
-            font-size: 3em;
-        }
+
         .SNlogo{
-            img{              
-                @include tamanio(500px,500px);
+            @include tamanio(75em,39.26em);            
+            img{
+                @include tamanio(75em,39.26em);
             }
         }
+        #Texto{
+            font-size: 3em;
+        }        
     }
     /*FIN SOBRE NOSOTROS */
     /* CONTACTO */

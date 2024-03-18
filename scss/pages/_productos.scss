@@ -32,11 +32,16 @@
                 color: black;
                 font-weight: 500;
                 transition: transform 0.3s;
+                p{
+                    color: black;
+                    font-weight: 500;
+                }
                 &:hover{
                    @include hoverProd(black,-5px 5px 3px white,none);
                 }
                 img{                    
                     width:15em;
+                    background-color: white;
                     &:hover{
                         background-color: white;
                         border-radius: 20px;                        

@@ -2,11 +2,17 @@
 .principalSobreNosotros{
     display:grid;
     background-color: $colorPrincipal;
-    padding: 5%;
+    text-align: center;
+    padding: 2%;
 
-    .SNlogo{
+    .SNlogo{       
+        @include tamanio(18.75em,9.81em);
         justify-self: center;
-        margin-bottom: 5%;    
+        padding-top: 5%;
+        margin-bottom: 8%;
+        img{
+            @include tamanio(18.75em,9.81em);
+        }        
     }
 }
 /*FIN SOBRE NOSOTROS */
