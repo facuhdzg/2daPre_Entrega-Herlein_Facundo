@@ -3,23 +3,18 @@
     /* PAGINA PRINCIPAL */
     .principal{        
         @include tamanio(100%,100vh);
-        @include fondo2(100% 200px,100% 200px,center top,center 47em,no-repeat);        
-        .carousel{    
-            @include tamanio(100%,20em);            
-            margin-bottom: 20%;
-            
-            .carousel-inner{
-                img{
-                    @include tamanio(100%,20em);      
-                }
-            }    
+        @include fondo2(100% 23.27%,100% 15.25%,center top,center 47em,no-repeat);        
+        .carousel{             
+            @include tamanio(100%,32.28%);           
+            margin-bottom: 20%;              
         }
     }     
     /*FIN PAGINA PRINCIPAL */    
     /* RESERVA Y CONTACTO */
     .principalContacto{
         background-size: 100% 200px;
-        padding-bottom: 70%;
+        @include fondo1(100% 15.25%,center 85%,no-repeat);
+        padding-bottom: 80%;
         span{
             font-size: 1.3em;
         }        
@@ -51,14 +46,10 @@
 {
     /* PRINCIPAL */
     .principal{        
-        @include tamanio(100%,100vh);
-        @include fondo2(100% 225px,100% 200px,center top,center 780px,no-repeat); 
-        .carousel{            
-            margin-top: 10%;            
-            @include tamanio(100%,20em);
-            img{                
-                @include tamanio(100%,35em);
-            }
+        @include tamanio(100%,150vh);
+        @include fondo2(100% 23.28%,100% 15.26%,center top,center 90%,no-repeat); 
+        .carousel{                      
+            @include tamanio(100%,32.52%);         
         }
     }    
     /*FIN PRINCIPAL */
@@ -105,8 +96,9 @@
     }
     /*SOBRE NOSOTROS*/
     /* CONTACTO */
-    .principalContacto{        
-        @include fondo1(100% 300px,center 40em,no-repeat);         
+    .principalContacto{ 
+        @include tamanio(100%,100vh);              
+        @include fondo1(100% 22.88%,center 85%,no-repeat);                
         span{
             font-size: 1.1em; 
         }                                       
@@ -177,10 +169,11 @@
     /*FIN HEADER */
     /* PRINCIPAL */
     .principal{        
-        @include tamanio(100%,100vh);
-        @include fondo2(100% 300px, 100% 250px,center top, center 750px,no-repeat);        
+        @include tamanio(100%,200vh);
+        @include fondo2(100% 23.27%, 100% 15.25%,center top, center 85%,no-repeat);        
         .carousel{            
-            @include margen();                   
+            @include margen();
+            @include tamanio(100%,32.28%);                    
             width: 100%;                               
         }
     }
@@ -237,7 +230,7 @@
     /*FIN SOBRE NOSOTROS */
     /* CONTACTO */
     .principalContacto{
-        @include fondo1(100% 300px,100% 35em,no-repeat);        
+        @include fondo1(100% 30.51%,center 75%,no-repeat);        
         padding-bottom: 70%;
     }
     /*FIN CONTACTO */
@@ -332,21 +325,12 @@
     /*FIN PIE DE PAGINA */
     /* PRINCIPAL */
     .principal{        
-        @include tamanio(100%,1400px);        
-        background-size: 90% 300px, 100% 240px;
+        @include tamanio(100%,200vh);
+        @include fondo2(80% 23.83%, 80% 15.62%,center top,center 85%,no-repeat);       
         .carousel{            
-            @include tamanio(80%,20em);  
-            margin-bottom: 30%;
-            .carousel-inner{                
-                @include tamanio(100%,300px);
-                .carousel-item{
-                    @include tamanio(100%,100%);
-                    img{
-                        @include tamanio(100%,100%);
-                    }
-                }
-            }
-            
+            @include tamanio(80%,33.05%);
+            margin-top: 20%;  
+            margin-bottom: 30%;           
         }
     }    
     /*FIN PRINCIPAL */
@@ -386,7 +370,7 @@
     .principalContacto{
         font-size: 22px;
         padding-bottom: 45%;
-        @include fondo1(100% 300px,center 30em,no-repeat);        
+        @include fondo1(100% 39.05%,center 90%,no-repeat);        
     }
     /*FIN CONTACTO */
     /* POSVENTA */
@@ -447,19 +431,11 @@
     /*FIN FOOTER */
     /* PRINCIPAL */
     .principal{
-        @include fondo2(80% 300px, 100% 300px,center top, center 1100px,no-repeat);        
-        height: 1500px;        
+        @include fondo2(70% 30.54%, 70% 20.02%,center top, center bottom,no-repeat);        
+        @include tamanio(100%,200vh);        
         .carousel{
-            @include tamanio(70%,25em);            
-            .carousel-inner{                
-                @include tamanio(100%,400px); 
-                .carousel-item{
-                    @include tamanio(100%,100%); 
-                    img{
-                        @include tamanio(100%,100%); 
-                    }
-                }
-            }
+            @include tamanio(70%,42.37%);
+            margin-top: 25%;           
         }
     }    
     /*FIN PRINCIPAL */
@@ -491,9 +467,9 @@
     /*FIN SOBRE NOSOTROS */
     /* CONTACTO */
     .principalContacto{
-        @include margen();
-        @include fondo1(100% 300px,center 38em,no-repeat);
-        padding-bottom: 25%;        
+        // @include margen();
+        @include fondo1(70% 40.05%,center 90%,no-repeat);
+        padding-bottom: 30%;        
         .Textocontacto{
             padding: 2%;
             text-align: center;
@@ -587,19 +563,11 @@
 /*FIN FOOTER */
 /* PRINCIPAL */
 .principal{    
-    @include tamanio(100%,160vh); 
-    background-size: 75% 350px ,100% 300px;
+    @include tamanio(100%,200vh);   
+    @include fondo2(60% 33.51% ,60% 21.97%,center top,center bottom,no-repeat);
     .carousel{      
-        @include tamanio(50%,25em); 
-        .carousel-inner{            
-            @include tamanio(100%,400px); 
-            .carousel-item{                
-                @include tamanio(100%,100%); 
-                img{
-                    @include tamanio(100%,100%); 
-                }
-            }
-        }
+        @include tamanio(50%,38.74%);
+        margin-top: 30%;       
     }
 }
 /*FIN PRINCIPAL */
@@ -642,18 +610,19 @@
 /*FIN SOBRE NOSOTROS */
 /* CONTACTO */
 .principalContacto{    
-    @include tamanio(100%,100vh);
-    @include fondo1(100% 300px,center 550px,no-repeat);
-    padding: 0;    
-    padding-bottom: 25%;
+    @include tamanio(100%,150vh);
+    @include fondo1(60% 29.30%,center 80%,no-repeat);  
+    padding-bottom: 40%;
+    font-size: 22px;
     .Textocontacto {
         text-align: center;
-        padding: 1%;
+        padding: 5%;
+        padding-bottom: 5%;
     }
     span{
         @include margen();
         i{
-            font-size: 1.5em;    
+            font-size: 1.8em;    
         }      
     }
 }
