@@ -21,7 +21,6 @@ html {
   background-color: rgb(138, 226, 79);
   font-weight: 500;
   border-radius: 10px;
-  margin-left: 6%;
 }
 
 .principalPosventa input[type=file], .principalPosventa input {
@@ -49,21 +48,19 @@ html {
   font-weight: 500;
 }
 .navbar .navbar-nav .nav-item {
-  color: white;
+  color: black;
   transition: transform 0.2s;
 }
 .navbar .navbar-nav .nav-item:hover {
-  color: black;
-  text-shadow: -3px 3px 2.5px black;
-  transform: scale(1.1);
+  background-color: #198754;
+  border-radius: 15px;
 }
 .navbar .navbar-nav .nav-item:active {
-  color: white;
-  text-shadow: -3px 3px 2.5px black;
-  transform: scale(1);
+  background-color: #198754;
+  border-radius: 15px;
 }
 .navbar .d-flex .btn {
-  color: white;
+  color: black;
 }
 
 /*FIN ENCABEZADO */
@@ -126,25 +123,26 @@ html {
 .principal {
   display: grid;
   width: 100%;
-  height: 94vh;
+  height: auto;
+  aspect-ratio: 0.3418;
   background-color: rgb(241, 213, 213);
   background-image: url(../img/publicidad-1.webp), url(https://flex.f6s.com/content-resource/media/946526.jpg);
-  background-size: 100% 18.15%, 100% 11.9%;
+  background-size: 100% auto, 100% auto;
   background-position: center top, center 85%;
   background-repeat: no-repeat;
 }
 .principal .carousel {
   width: 100%;
-  height: 25.17%;
+  height: auto;
+  aspect-ratio: 1;
   margin-bottom: 20%;
 }
 .principal .carousel .carousel-inner {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 1;
 }
 .principal .carousel .carousel-inner .carousel-item {
-  width: 100%;
-  height: 100%;
   /*RTX 4090*/
   /*FIN RTX 4090*/
   /*MOTHER B550*/
@@ -156,23 +154,31 @@ html {
 }
 .principal .carousel .carousel-inner .carousel-item .img1 {
   width: 100%;
-  height: 99.8%;
+  height: auto;
+  aspect-ratio: 1.36;
+  margin-top: 10%;
 }
 .principal .carousel .carousel-inner .carousel-item .img2 {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 1;
 }
 .principal .carousel .carousel-inner .carousel-item .img3 {
   width: 100%;
-  height: 76.68%;
+  height: auto;
+  aspect-ratio: 1.77;
+  margin-top: 15%;
 }
 .principal .carousel .carousel-inner .carousel-item .img4 {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 1;
 }
 .principal .carousel .carousel-inner .carousel-item .img5 {
   width: 100%;
-  height: 108%;
+  height: auto;
+  aspect-ratio: 1.25;
+  margin-top: 10%;
 }
 
 /*FIN Principal INDEX */
@@ -237,15 +243,18 @@ html {
   width: 70%;
 }
 .principalP .productos {
+  width: 100%;
   text-align: center;
 }
 .principalP .productos .item {
-  margin-top: 2em;
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
   transition: transform 0.3s;
 }
 .principalP .productos .item:hover {
   color: none;
-  text-shadow: -5px 5px 3px white;
+  text-shadow: -5px 5px 3px rgb(255, 255, 255);
   transform: scale(1.01);
 }
 .principalP .productos .item a {
@@ -264,11 +273,12 @@ html {
   transform: none;
 }
 .principalP .productos .item a img {
-  width: 15em;
+  width: 76.92%;
+  max-width: 325px;
+  aspect-ratio: 1;
   background-color: white;
 }
 .principalP .productos .item a img:hover {
-  background-color: white;
   border-radius: 20px;
 }
 
@@ -279,17 +289,21 @@ html {
   background-color: rgb(241, 213, 213);
   text-align: center;
   padding: 2%;
+  width: 100%;
+  height: auto;
 }
 .principalSobreNosotros .SNlogo {
-  width: 18.75em;
-  height: 9.81em;
+  width: 95%;
+  height: auto;
+  aspect-ratio: 1.911;
   justify-self: center;
   padding-top: 5%;
   margin-bottom: 8%;
 }
 .principalSobreNosotros .SNlogo img {
-  width: 18.75em;
-  height: 9.81em;
+  width: 95%;
+  height: auto;
+  aspect-ratio: 1.911;
 }
 
 /*FIN SOBRE NOSOTROS */
@@ -300,7 +314,7 @@ html {
   height: 100vh;
   background-color: rgb(241, 213, 213);
   background-image: url(https://flex.f6s.com/content-resource/media/946526.jpg);
-  background-size: 100% 11.9%;
+  background-size: 100% auto;
   background-position: center 85%;
   background-repeat: no-repeat;
   padding-bottom: 80%;
@@ -310,21 +324,19 @@ html {
   text-align: justify;
   font-size: 1.5em;
 }
-.principalContacto span {
+.principalContacto .linkContacto {
   text-align: center;
-}
-.principalContacto span a {
   color: black;
   text-decoration: none;
   font-size: 1.5em;
   margin: 2%;
 }
-.principalContacto span a:hover {
+.principalContacto .linkContacto:hover {
   color: white;
-  text-shadow: -3px 3px 2.5px black;
+  text-shadow: -3px 3px 6px black;
   transform: none;
 }
-.principalContacto span a:active {
+.principalContacto .linkContacto:active {
   color: black;
   text-shadow: none;
   transform: none;
@@ -335,10 +347,10 @@ html {
 .principalPosventa {
   display: grid;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgb(241, 213, 213);
   padding: 2%;
-  padding-bottom: 40%;
+  padding-bottom: 10%;
 }
 .principalPosventa label {
   margin-bottom: 3%;
@@ -346,7 +358,9 @@ html {
 }
 .principalPosventa input:focus {
   background-color: white;
-  transform: scale(1.1);
+}
+.principalPosventa input:focus::placeholder {
+  color: transparent;
 }
 .principalPosventa input[type=file] {
   width: 100%;
@@ -361,12 +375,15 @@ html {
 .principalPosventa textarea:focus {
   background-color: white;
 }
+.principalPosventa textarea:focus::placeholder {
+  color: transparent;
+}
 .principalPosventa #enviar {
   transition: transform 0.2s;
 }
 .principalPosventa #enviar:hover {
   color: white;
-  text-shadow: -5px 3px 2.5px black;
+  text-shadow: -5px 3px 6px black;
   transform: scale(1.1);
 }
 .principalPosventa #enviar:active {
@@ -379,7 +396,7 @@ html {
 }
 .principalPosventa #borrar:hover {
   color: white;
-  text-shadow: -5px 3px 2.5px black;
+  text-shadow: -5px 3px 6px black;
   transform: scale(1.1);
 }
 .principalPosventa #borrar:active {
@@ -387,30 +404,16 @@ html {
   text-shadow: none;
   transform: scale(0.9);
 }
+.principalPosventa .botones {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /*FIN PRINCIPAL POSVENTA */
 /* MEDIA QUERIES */
 @media only screen and (min-width: 400px) and (max-width: 598px) {
-  /* PAGINA PRINCIPAL */
-  .principal {
-    width: 100%;
-    height: 100vh;
-    background-size: 100% 23.27%, 100% 15.25%;
-    background-position: center top, center 47em;
-    background-repeat: no-repeat;
-  }
-  .principal .carousel {
-    width: 100%;
-    height: 32.28%;
-    margin-bottom: 20%;
-  }
-  /*FIN PAGINA PRINCIPAL */
   /* RESERVA Y CONTACTO */
   .principalContacto {
-    background-size: 100% 200px;
-    background-size: 100% 15.25%;
-    background-position: center 85%;
-    background-repeat: no-repeat;
     padding-bottom: 80%;
   }
   .principalContacto span {
@@ -424,10 +427,6 @@ html {
   .principalPosventa fieldset label {
     padding-bottom: 2%;
     font-size: 1.3em;
-  }
-  .principalPosventa fieldset textarea {
-    width: 100%;
-    height: auto;
   }
   .principalPosventa fieldset #borrar {
     width: 160px;
@@ -443,14 +442,14 @@ html {
   /* PRINCIPAL */
   .principal {
     width: 100%;
-    height: 150vh;
-    background-size: 100% 23.28%, 100% 15.26%;
-    background-position: center top, center 90%;
+    height: auto;
+    aspect-ratio: 0.474;
+    background-size: 100% auto, 100% auto;
+    background-position: center top, center bottom;
     background-repeat: no-repeat;
   }
   .principal .carousel {
-    width: 100%;
-    height: 32.52%;
+    padding-top: 30%;
   }
   /*FIN PRINCIPAL */
   /* PIE DE PAGINA */
@@ -480,29 +479,20 @@ html {
     width: 100%;
     height: 100%;
   }
-  .principalP .productos .item {
-    margin-top: 10%;
-  }
-  .principalP .productos .item img {
-    width: 300px;
-    height: 250px;
+  .principalP .productos {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    padding: 6%;
   }
   /*FIN PRODUCTOS */
-  /*SOBRE NOSOTROS*/
-  .principalSobreNosotros .SNlogo {
-    width: 25em;
-    height: 13.08em;
-  }
-  .principalSobreNosotros .SNlogo img {
-    width: 25em;
-    height: 13.08em;
-  }
-  /*SOBRE NOSOTROS*/
   /* CONTACTO */
   .principalContacto {
     width: 100%;
     height: 100vh;
-    background-size: 100% 22.88%;
+    background-size: 100% auto;
     background-position: center 85%;
     background-repeat: no-repeat;
   }
@@ -521,18 +511,14 @@ html {
     height: 100%;
   }
   .principalPosventa form {
-    padding-top: 10%;
+    padding-top: 12%;
   }
   .principalPosventa form #borrar {
-    margin-top: 2%;
     width: 200px;
     height: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
     font-size: 30px;
   }
   .principalPosventa form #enviar {
-    margin: 0;
     width: 200px;
     height: 50px;
     font-size: 30px;
@@ -540,45 +526,38 @@ html {
   .principalPosventa form input[type=text], .principalPosventa form input[type=number], .principalPosventa form input[type=email] {
     width: 70%;
   }
-  .principalPosventa form textarea {
-    width: 100%;
+  .principalPosventa form .botones {
+    margin-top: 2%;
   }
   /*FIN POSVENTA */
 }
 @media only screen and (min-width: 800px) and (max-width: 1020px) {
   /* HEADER */
   .navbar .navbar-brand {
-    color: white;
     font-size: 1.5em;
   }
   .navbar .navbar-brand span {
-    color: red;
     font-size: 1em;
     font-weight: 500;
   }
   .navbar .navbar-nav .nav-item {
-    color: white;
     font-size: 1.2em;
   }
   .navbar .d-flex .btn {
-    color: white;
     font-size: 1em;
   }
   /*FIN HEADER */
   /* PRINCIPAL */
   .principal {
     width: 100%;
-    height: 200vh;
-    background-size: 100% 23.27%, 100% 15.25%;
-    background-position: center top, center 85%;
+    height: auto;
+    aspect-ratio: 0.4816;
+    background-size: 100% auto, 100% auto;
+    background-position: center top, center 95%;
     background-repeat: no-repeat;
   }
   .principal .carousel {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 32.28%;
-    width: 100%;
+    margin-top: 35%;
   }
   /*FIN PRINCIPAL */
   /* PIE DE PAGINA */
@@ -623,24 +602,15 @@ html {
     padding: 5%;
   }
   /*FIN PRODUCTOS */
-  /* SOBRE NOSOTROS */
-  .principalSobreNosotros .SNlogo {
-    padding-top: 0%;
-    margin-bottom: 4%;
-    width: 37.5em;
-    height: 19.63em;
-  }
-  .principalSobreNosotros .SNlogo img {
-    width: 37.5em;
-    height: 19.63em;
-  }
-  /*FIN SOBRE NOSOTROS */
   /* CONTACTO */
   .principalContacto {
-    background-size: 100% 30.51%;
-    background-position: center 75%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.011;
+    background-size: 100% auto;
+    background-position: center 80%;
     background-repeat: no-repeat;
-    padding-bottom: 70%;
+    padding-bottom: 55%;
   }
   /*FIN CONTACTO */
   /*POSVENTA*/
@@ -654,15 +624,11 @@ html {
     padding-top: 6%;
   }
   .principalPosventa form #borrar {
-    margin-top: 2%;
     width: 250px;
     height: 50px;
-    margin-left: 14%;
-    margin-right: 10%;
     font-size: 30px;
   }
   .principalPosventa form #enviar {
-    margin: 0;
     width: 250px;
     height: 50px;
     font-size: 30px;
@@ -678,11 +644,7 @@ html {
 }
 @media only screen and (min-width: 1024px) and (max-width: 1498px) {
   /* HEADER */
-  .navbar .navbar-brand {
-    color: white;
-  }
   .navbar .navbar-brand span {
-    color: red;
     font-size: 1.1em;
     font-weight: 500;
   }
@@ -691,10 +653,6 @@ html {
     font-size: 1.3em;
     text-align: center;
     line-height: 25px;
-    color: white;
-  }
-  .navbar .d-flex .btn {
-    color: white;
   }
   /* FIN HEADER */
   /* PIE DE PAGINA */
@@ -732,16 +690,17 @@ html {
   /* PRINCIPAL */
   .principal {
     width: 100%;
-    height: 200vh;
-    background-size: 80% 23.83%, 80% 15.62%;
-    background-position: center top, center 85%;
+    height: auto;
+    aspect-ratio: 0.585879;
+    background-size: 80% auto, 80% auto;
+    background-position: center top, center 95%;
     background-repeat: no-repeat;
   }
   .principal .carousel {
     width: 80%;
-    height: 33.05%;
-    margin-top: 20%;
-    margin-bottom: 30%;
+    height: auto;
+    margin-top: 25%;
+    margin-bottom: 20%;
   }
   /*FIN PRINCIPAL */
   /*PRODUCTOS*/
@@ -753,25 +712,12 @@ html {
     grid-template-rows: repeat(12, 1fr);
     padding: 5%;
   }
-  .principalP .productos .item img {
-    width: 240px;
-    height: 240px;
-  }
   /*FIN PRODUCTOS*/
   /*SOBRE NOSOTROS*/
   .principalSobreNosotros {
     width: 100%;
-    height: 100vh;
-  }
-  .principalSobreNosotros .SNlogo {
-    padding-top: 0%;
-    margin-bottom: 3%;
-    width: 50em;
-    height: 26.17em;
-  }
-  .principalSobreNosotros .SNlogo img {
-    width: 50em;
-    height: 26.17em;
+    height: auto;
+    aspect-ratio: 0.9499;
   }
   .principalSobreNosotros #Texto {
     font-size: 22px;
@@ -781,9 +727,12 @@ html {
   .principalContacto {
     font-size: 22px;
     padding-bottom: 45%;
-    background-size: 100% 39.05%;
+    width: 100%;
+    height: auto;
+    background-size: 100% auto;
     background-position: center 90%;
     background-repeat: no-repeat;
+    aspect-ratio: 1.0545;
   }
   /*FIN CONTACTO */
   /* POSVENTA */
@@ -799,12 +748,10 @@ html {
     margin-top: 2%;
     width: 300px;
     height: 50px;
-    margin-left: 15%;
-    margin-right: 10%;
     font-size: 30px;
   }
   .principalPosventa form #enviar {
-    margin: 0;
+    margin-top: 2%;
     width: 300px;
     height: 50px;
     font-size: 30px;
@@ -853,15 +800,16 @@ html {
   /*FIN FOOTER */
   /* PRINCIPAL */
   .principal {
-    background-size: 70% 30.54%, 70% 20.02%;
-    background-position: center top, center bottom;
+    background-size: 70% auto, 70% auto;
+    background-position: center top, center 95%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 200vh;
+    height: auto;
+    aspect-ratio: 0.64366;
   }
   .principal .carousel {
     width: 70%;
-    height: 42.37%;
+    height: auto;
     margin-top: 25%;
   }
   /*FIN PRINCIPAL */
@@ -871,29 +819,16 @@ html {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
   }
-  .principalP .productos .item img {
-    width: 240px;
-    height: 240px;
-  }
   /* PRODUCTOS */
-  /* SOBRE NOSOTROS */
-  .principalSobreNosotros .SNlogo {
-    width: 75em;
-    height: 39.26em;
-    padding-top: 0%;
-    margin-bottom: 3%;
-  }
-  .principalSobreNosotros .SNlogo img {
-    width: 75em;
-    height: 39.26em;
-  }
-  /*FIN SOBRE NOSOTROS */
   /* CONTACTO */
   .principalContacto {
-    background-size: 70% 40.05%;
+    background-size: 70% auto;
     background-position: center 90%;
     background-repeat: no-repeat;
-    padding-bottom: 30%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.5447;
+    padding-bottom: 35%;
   }
   .principalContacto .Textocontacto {
     padding: 2%;
@@ -903,7 +838,7 @@ html {
   /*POSVENTA*/
   .principalPosventa {
     width: 100%;
-    height: 110vh;
+    height: auto;
     justify-content: center;
   }
   .principalPosventa fieldset {
@@ -919,12 +854,10 @@ html {
     margin-top: 2%;
     width: 300px;
     height: 50px;
-    margin-left: 10%;
-    margin-right: 5%;
     font-size: 30px;
   }
   .principalPosventa fieldset form #enviar {
-    margin: 0;
+    margin-top: 2%;
     width: 300px;
     height: 50px;
     font-size: 30px;
@@ -933,7 +866,7 @@ html {
     width: 60%;
   }
   .principalPosventa fieldset form textarea {
-    width: 90%;
+    width: 100%;
     height: 300px;
   }
   /*FIN POSVENTA*/
@@ -993,14 +926,14 @@ html {
   /* PRINCIPAL */
   .principal {
     width: 100%;
-    height: 200vh;
-    background-size: 60% 33.51%, 60% 21.97%;
-    background-position: center top, center bottom;
+    height: 240vh;
+    background-size: 60% auto, 60% auto;
+    background-position: center top, center 95%;
     background-repeat: no-repeat;
   }
   .principal .carousel {
     width: 50%;
-    height: 38.74%;
+    height: auto;
     margin-top: 30%;
   }
   /*FIN PRINCIPAL */
@@ -1010,14 +943,6 @@ html {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
-  }
-  .principalP .productos .item a {
-    width: 100%;
-    height: 100%;
-  }
-  .principalP .productos .item a img {
-    width: 400px;
-    height: 400px;
   }
   .principalP .productos .item a p {
     font-size: 1.5em;
@@ -1042,7 +967,7 @@ html {
   .principalContacto {
     width: 100%;
     height: 150vh;
-    background-size: 60% 29.3%;
+    background-size: 60% auto;
     background-position: center 80%;
     background-repeat: no-repeat;
     padding-bottom: 40%;
@@ -1098,221 +1023,6 @@ html {
     height: 50px;
   }
   /*FIN POSVENTA */
-}
-@media only screen and (min-width: 3839px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /* HEADER */
-  .navbar .navbar-brand {
-    color: white;
-    font-size: 3em;
-  }
-  .navbar .navbar-brand span {
-    font-weight: 500;
-    font-size: 1em;
-  }
-  .navbar .collapse {
-    padding-left: 15%;
-    width: 100%;
-    height: 110px;
-  }
-  .navbar .collapse .navbar-nav .nav-item {
-    color: white;
-    font-size: 2.9em;
-  }
-  .navbar .collapse .d-flex .btn {
-    width: 8em;
-    height: 1.6em;
-    color: white;
-    font-size: 2.5em;
-    line-height: 20px;
-  }
-  .navbar .collapse .d-flex .form-control {
-    width: 25em;
-    height: 2em;
-    font-size: 2em;
-  }
-  /*FIN HEADER */
-  /* FOOTER */
-  .pie {
-    display: grid;
-    width: 100%;
-    height: 440px;
-    grid-template-rows: 300px 70px 70px;
-    padding: 0;
-  }
-  .pie .redes {
-    font-size: 3.2em;
-    align-items: center;
-  }
-  .pie .derechos {
-    width: 100%;
-    height: 100%;
-    font-size: 2em;
-  }
-  .pie .derechos h2 {
-    margin: 0;
-  }
-  .pie .ubicacion {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-  }
-  .pie .ubicacion iframe {
-    width: 90%;
-    height: 95%;
-  }
-  /*FIN FOOTER */
-  /* PRINCIPAL */
-  .principal {
-    width: 100%;
-    height: 180vh;
-    background-size: 60% 800px, 100% 600px;
-    background-position: center top, center 150em;
-    background-repeat: no-repeat;
-    background-color: rgb(241, 213, 213);
-  }
-  .principal .carousel {
-    width: 60%;
-    height: 65em;
-    margin-bottom: 20%;
-  }
-  .principal .carousel .carousel-indicators button {
-    width: 70px;
-  }
-  .principal .carousel .carousel-inner {
-    width: 100%;
-    height: 1200px;
-  }
-  .principal .carousel .carousel-inner .carousel-item {
-    width: 100%;
-    height: 100%;
-  }
-  .principal .carousel .carousel-inner .carousel-item img {
-    width: 100%;
-    height: 100%;
-  }
-  /*FIN PRINCIPAL */
-  /* PRODUCTOS */
-  .principalP .filtros .dropdown {
-    width: 60%;
-    padding-left: 5px;
-  }
-  .principalP .filtros .dropdown button {
-    height: 2em;
-    font-size: 2em;
-  }
-  .principalP .productos {
-    grid-gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-  }
-  .principalP .productos .item a {
-    width: 100%;
-    height: 100%;
-  }
-  .principalP .productos .item a img {
-    width: 800px;
-    height: 800px;
-  }
-  .principalP .productos .item a p {
-    font-size: 35px;
-  }
-  /*FIN PRODUCTOS */
-  /* SOBRE NOSOTROS */
-  .principalSobreNosotros .SNlogo {
-    width: 75em;
-    height: 39.26em;
-  }
-  .principalSobreNosotros .SNlogo img {
-    width: 75em;
-    height: 39.26em;
-  }
-  .principalSobreNosotros #Texto {
-    font-size: 3em;
-  }
-  /*FIN SOBRE NOSOTROS */
-  /* CONTACTO */
-  .principalContacto {
-    width: 100%;
-    height: 100vh;
-    background-size: 100% 600px;
-    background-position: center 80em;
-    background-repeat: no-repeat;
-    padding: 0;
-    padding-bottom: 25%;
-  }
-  .principalContacto .Textocontacto {
-    padding: 2%;
-    font-size: 4em;
-    text-align: center;
-  }
-  .principalContacto span {
-    font-size: 3em;
-    padding-bottom: 3%;
-  }
-  /*FIN CONTACTO */
-  /* POSVENTA */
-  .principalPosventa {
-    display: grid;
-    width: 100%;
-    height: 130vh;
-    text-align: center;
-    justify-content: center;
-  }
-  .principalPosventa h2 {
-    font-size: 4em;
-  }
-  .principalPosventa fieldset {
-    width: 100%;
-  }
-  .principalPosventa fieldset form {
-    margin-top: 5%;
-  }
-  .principalPosventa fieldset form label, .principalPosventa fieldset form input[type=email], .principalPosventa fieldset form input[type=number], .principalPosventa fieldset form input[type=text] {
-    font-size: 2.5em;
-    width: 70%;
-  }
-  .principalPosventa fieldset form input[type=file] {
-    font-size: 2em;
-    width: 80%;
-  }
-  .principalPosventa fieldset form textarea {
-    font-size: 2em;
-    height: 600px;
-  }
-  .principalPosventa fieldset form #enviar {
-    width: 600px;
-    height: 80px;
-    font-size: 2.5em;
-  }
-  .principalPosventa fieldset form #borrar {
-    width: 600px;
-    height: 80px;
-    font-size: 2.5em;
-  }
-  /*FIN POSVENTA */
-  /* BOTON SUBIR */
-  .subir {
-    position: fixed;
-    right: 60px;
-    bottom: 100px;
-    width: 80px;
-    height: 80px;
-    background-color: rgb(138, 226, 79);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 80px;
-    font-size: 50px;
-  }
-  .subir i {
-    color: black;
-  }
-  /*FIN BOTON SUBIR */
 }
 /*FIN MEDIA QUERIES */
 

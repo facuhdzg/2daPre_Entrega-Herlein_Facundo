@@ -1,19 +1,7 @@
 /* MEDIA QUERIES */
 @media only screen and (min-width: 400px) and (max-width:598px) {      
-    /* PAGINA PRINCIPAL */
-    .principal{        
-        @include tamanio(100%,100vh);
-        @include fondo2(100% 23.27%,100% 15.25%,center top,center 47em,no-repeat);        
-        .carousel{             
-            @include tamanio(100%,32.28%);           
-            margin-bottom: 20%;              
-        }
-    }     
-    /*FIN PAGINA PRINCIPAL */    
     /* RESERVA Y CONTACTO */
-    .principalContacto{
-        background-size: 100% 200px;
-        @include fondo1(100% 15.25%,center 85%,no-repeat);
+    .principalContacto{       
         padding-bottom: 80%;
         span{
             font-size: 1.3em;
@@ -27,16 +15,13 @@
             label{
                 padding-bottom: 2%;
                 font-size: 1.3em;
-            }
-            textarea{
-                @include tamanio(100%,auto);
-            }
+            }            
             #borrar{                                
-                @include tamanio(160px,48px);
+                @include tamanio(160px,48px);                
             }
-            #enviar{
-                @include tamanio(160px,48px);                     
-            }
+            #enviar{                
+                @include tamanio(160px,48px);                                                               
+            }            
         }
     }
     /*FIN POSVENTA */
@@ -46,10 +31,11 @@
 {
     /* PRINCIPAL */
     .principal{        
-        @include tamanio(100%,150vh);
-        @include fondo2(100% 23.28%,100% 15.26%,center top,center 90%,no-repeat); 
-        .carousel{                      
-            @include tamanio(100%,32.52%);         
+        @include tamanio(100%,auto);
+        aspect-ratio: 0.474;
+        @include fondo2(100% auto,100% auto,center top,center bottom,no-repeat); 
+        .carousel{
+            padding-top: 30%;
         }
     }    
     /*FIN PRINCIPAL */
@@ -75,30 +61,19 @@
     /* PRODUCTOS */
     .principalP{
         @include tamanio(100%,100%); 
-        .productos{
-            .item{
-                margin-top: 10%;
-                img{
-                    @include tamanio(300px,250px);                    
-                }
-            }
+        .productos{            
+            display: grid;
+            @include tamanio(100%,auto); 
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(12,1fr);
+            padding: 6%;                        
         }
     }
-    /*FIN PRODUCTOS */
-    /*SOBRE NOSOTROS*/
-    .principalSobreNosotros{               
-        .SNlogo{
-            @include tamanio(25em,13.08em);            
-            img{               
-                @include tamanio(25em,13.08em);                 
-            }
-        }
-    }
-    /*SOBRE NOSOTROS*/
+    /*FIN PRODUCTOS */    
     /* CONTACTO */
     .principalContacto{ 
         @include tamanio(100%,100vh);              
-        @include fondo1(100% 22.88%,center 85%,no-repeat);                
+        @include fondo1(100% auto,center 85%,no-repeat);                
         span{
             font-size: 1.1em; 
         }                                       
@@ -113,25 +88,22 @@
         padding-top: 5%;       
         @include tamanio(100%,100%);
         form{
-            padding-top: 10%;
-            #borrar{
-                margin-top: 2%;
-                @include tamanio(200px,50px);                
-                margin-left: 10%;
-                margin-right: 10%;                     
+            padding-top: 12%;
+            #borrar{                
+                @include tamanio(200px,50px);                                   
                 font-size: 30px;                 
             }
             #enviar{               
-                margin:0;
                 @include tamanio(200px,50px);            
                 font-size: 30px;
             }
             input[type="text"],input[type="number"],input[type="email"]{
                 width: 70%;
             }
-            textarea{
-                width:100%;
+            .botones{
+                margin-top: 2%;
             }
+
         }
 
     }   
@@ -143,25 +115,21 @@
 {
     /* HEADER */
     .navbar{
-        .navbar-brand{ 
-            color:white;
+        .navbar-brand{           
             font-size: 1.5em;
-            span{
-                color:red;
+            span{               
                 font-size: 1em;
                 font-weight: 500;    
             }
         }
         
         .navbar-nav{
-            .nav-item {
-                color: white;
+            .nav-item {         
                 font-size: 1.2em;    
             }
         } 
         .d-flex{
-            .btn{
-                color: white;
+            .btn{                
                 font-size: 1em;
             }
         }
@@ -169,12 +137,11 @@
     /*FIN HEADER */
     /* PRINCIPAL */
     .principal{        
-        @include tamanio(100%,200vh);
-        @include fondo2(100% 23.27%, 100% 15.25%,center top, center 85%,no-repeat);        
-        .carousel{            
-            @include margen();
-            @include tamanio(100%,32.28%);                    
-            width: 100%;                               
+        @include tamanio(100%,auto);
+        aspect-ratio:0.4816 ;
+        @include fondo2(100% auto, 100% auto,center top, center 95%,no-repeat);        
+        .carousel{                               
+            margin-top: 35%;                       
         }
     }
     /*FIN PRINCIPAL */
@@ -215,23 +182,13 @@
             padding: 5%;
         }
     }     
-    /*FIN PRODUCTOS */
-    /* SOBRE NOSOTROS */
-    .principalSobreNosotros{       
-        .SNlogo{
-            padding-top: 0%;
-            margin-bottom: 4%;
-            @include tamanio(37.5em,19.63em);
-            img{               
-                @include tamanio(37.5em,19.63em);               
-            }
-        }
-    } 
-    /*FIN SOBRE NOSOTROS */
+    /*FIN PRODUCTOS */    
     /* CONTACTO */
     .principalContacto{
-        @include fondo1(100% 30.51%,center 75%,no-repeat);        
-        padding-bottom: 70%;
+        @include tamanio(100%,auto);
+        aspect-ratio:1.011; 
+        @include fondo1(100% auto,center 80%,no-repeat);        
+        padding-bottom: 55%;
     }
     /*FIN CONTACTO */
     /*POSVENTA*/
@@ -241,15 +198,11 @@
         form{
             font-size: 22px;
             padding-top: 6%;
-            #borrar{
-                margin-top: 2%;
-                @include tamanio(250px,50px);                
-                margin-left: 14%;
-                margin-right: 10%;                     
+            #borrar{               
+                @include tamanio(250px,50px);                            
                 font-size: 30px;                 
             }
-            #enviar{           
-                margin:0;
+            #enviar{               
                 @include tamanio(250px,50px);            
                 font-size: 30px;
             }
@@ -269,9 +222,8 @@
     /* HEADER */
     .navbar{
         .navbar-brand{
-            color:white;
-            span{
-                color:red;
+            
+            span{               
                 font-size: 1.1em;
                 font-weight: 500;    
             }
@@ -281,15 +233,9 @@
                 margin-left: 20px;
                 font-size: 1.3em;
                 text-align: center;
-                line-height: 25px;
-                color: white;                               
+                line-height: 25px;                                              
             }
-        }        
-        .d-flex{
-            .btn{
-                color: white;
-            }
-        }
+        }       
     }   
     /* FIN HEADER */
     /* PIE DE PAGINA */
@@ -325,12 +271,13 @@
     /*FIN PIE DE PAGINA */
     /* PRINCIPAL */
     .principal{        
-        @include tamanio(100%,200vh);
-        @include fondo2(80% 23.83%, 80% 15.62%,center top,center 85%,no-repeat);       
+        @include tamanio(100%,auto);
+        aspect-ratio: 0.585879;
+        @include fondo2(80% auto, 80% auto,center top,center 95%,no-repeat);       
         .carousel{            
-            @include tamanio(80%,33.05%);
-            margin-top: 20%;  
-            margin-bottom: 30%;           
+            @include tamanio(80%,auto);
+            margin-top: 25%;  
+            margin-bottom: 20%;           
         }
     }    
     /*FIN PRINCIPAL */
@@ -341,26 +288,14 @@
             @include tamanio(100%,auto);
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(12,1fr);
-            padding: 5%;
-            .item{
-                img{
-                    @include tamanio(240px,240px);                    
-                }
-            }
+            padding: 5%;           
         }
     } 
     /*FIN PRODUCTOS*/
     /*SOBRE NOSOTROS*/
     .principalSobreNosotros{
-        @include tamanio(100%,100vh);
-        .SNlogo{
-            padding-top: 0%;
-            margin-bottom: 3%;
-            @include tamanio(50em,26.17em);
-            img{
-                @include tamanio(50em,26.17em);
-            }
-        }       
+        @include tamanio(100%,auto);
+        aspect-ratio:0.9499;              
         #Texto{
             font-size: 22px;
         }        
@@ -370,7 +305,9 @@
     .principalContacto{
         font-size: 22px;
         padding-bottom: 45%;
-        @include fondo1(100% 39.05%,center 90%,no-repeat);        
+        @include tamanio(100%,auto);
+        @include fondo1(100% auto,center 90%,no-repeat); 
+        aspect-ratio: 1.0545;       
     }
     /*FIN CONTACTO */
     /* POSVENTA */
@@ -381,13 +318,11 @@
             padding-top: 6%;
             #borrar{
                 margin-top: 2%;                
-                @include tamanio(300px,50px);
-                margin-left: 15%;
-                margin-right: 10%;                     
+                @include tamanio(300px,50px);                                    
                 font-size: 30px;                 
             }
-            #enviar{           
-                margin:0;
+            #enviar{
+                margin-top: 2%;                
                 @include tamanio(300px,50px);          
                 font-size: 30px;
             }
@@ -431,10 +366,11 @@
     /*FIN FOOTER */
     /* PRINCIPAL */
     .principal{
-        @include fondo2(70% 30.54%, 70% 20.02%,center top, center bottom,no-repeat);        
-        @include tamanio(100%,200vh);        
+        @include fondo2(70% auto, 70% auto,center top, center 95%,no-repeat);        
+        @include tamanio(100%,auto);
+        aspect-ratio:0.64366 ;        
         .carousel{
-            @include tamanio(70%,42.37%);
+            @include tamanio(70%,auto);
             margin-top: 25%;           
         }
     }    
@@ -444,32 +380,16 @@
         .productos{
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(8,1fr);
-            .item{
-                img{                    
-                    @include tamanio(240px,240px); 
-                }
-            }
+            grid-template-rows: repeat(8,1fr);            
         }
     } 
-    /* PRODUCTOS */
-    /* SOBRE NOSOTROS */
-    .principalSobreNosotros{
-        .SNlogo{
-            @include tamanio(75em,39.26em);
-            padding-top: 0%;
-            margin-bottom: 3%;
-            img{            
-                @include tamanio(75em,39.26em);
-            }
-        }
-    }  
-    /*FIN SOBRE NOSOTROS */
+    /* PRODUCTOS */    
     /* CONTACTO */
-    .principalContacto{
-        // @include margen();
-        @include fondo1(70% 40.05%,center 90%,no-repeat);
-        padding-bottom: 30%;        
+    .principalContacto{        
+        @include fondo1(70% auto,center 90%,no-repeat);
+        @include tamanio(100%,auto);
+        aspect-ratio:1.5447 ;
+        padding-bottom: 35%;        
         .Textocontacto{
             padding: 2%;
             text-align: center;
@@ -478,7 +398,7 @@
     /*FIN CONTACTO */
     /*POSVENTA*/
     .principalPosventa{        
-        @include tamanio(100%,110vh);
+        @include tamanio(100%,auto);
         justify-content: center;
         fieldset{            
             justify-self: center;
@@ -489,13 +409,11 @@
                 padding-top: 6%;                
                 #borrar{
                     margin-top: 2%;                    
-                    @include tamanio(300px,50px);
-                    margin-left: 10%;
-                    margin-right: 5%;                     
+                    @include tamanio(300px,50px);                                         
                     font-size: 30px;                 
                 }
                 #enviar{           
-                    margin:0;
+                    margin-top: 2%; 
                     @include tamanio(300px,50px);           
                     font-size: 30px;
                 }
@@ -503,7 +421,7 @@
                     width: 60%;
                 }
                 textarea{                    
-                    @include tamanio(90%,300px);
+                    @include tamanio(100%,300px);
                 }
             }
         }
@@ -512,367 +430,153 @@
     /*FIN POSVENTA*/
 }
 @media only screen and (min-width:1920px) and (max-width:3837px){
-/* HEADER */
-.navbar{    
-    .collapse{
-        padding-left: 15%;        
-        .navbar-nav{
-            font-size: 22px;
-        }
-        .d-flex{
-            .btn{                
-                @include tamanio(100px,30px);    
-                font-size: 1.2em;
-                line-height: 5px;           
-            }
-            .form-control{
-                width: 25em;
-                height: 2em;
-                @include tamanio(25em,2em); 
-                font-size: 1em;        
-            } 
-        }
-    }
-    
-}
-/*FIN HEADER */
-/* FOOTER */
-.pie{    
-    @include tamanio(100%,250px); 
-    grid-template-rows: 150px 50px 50px ;
-    @include margen();
-    .redes {
-        font-size: 2em;
-        letter-spacing: 1em;       
-    }
-    .derechos{        
-        font-size: 1.2em;
-        padding-bottom: 1%;
-        h2{
-            @include margen();
-        }
-    }
-    .ubicacion {        
-        @include tamanio(100%,150px);
-        justify-content: center;        
-        iframe{            
-            @include tamanio(90%,90%);           
-        }
-    }    
-}
-/*FIN FOOTER */
-/* PRINCIPAL */
-.principal{    
-    @include tamanio(100%,200vh);   
-    @include fondo2(60% 33.51% ,60% 21.97%,center top,center bottom,no-repeat);
-    .carousel{      
-        @include tamanio(50%,38.74%);
-        margin-top: 30%;       
-    }
-}
-/*FIN PRINCIPAL */
-/* PRODUCTOS */
-.principalP{
-    .productos {
-        grid-gap:10px;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(8,1fr);       
-        .item{
-            a{
-                @include tamanio(100%,100%); 
-                img{
-                    @include tamanio(400px,400px);                   
-                }
-                p{
-                    font-size: 1.5em;
-                }
-            }
-            
-        }
-    }
-}     
-/*FIN PRODUCTOS */
-/* SOBRE NOSOTROS */
-.principalSobreNosotros{
-    .SNlogo{
-        @include tamanio(75em,39.26em);
-        padding-top: 0%;
-        margin-bottom: 3%;
-        img{
-            @include tamanio(75em,39.26em);
-        }
-    }
-    #Texto{
-        font-size: 1.3em;
-    }
-}
-/*FIN SOBRE NOSOTROS */
-/* CONTACTO */
-.principalContacto{    
-    @include tamanio(100%,150vh);
-    @include fondo1(60% 29.30%,center 80%,no-repeat);  
-    padding-bottom: 40%;
-    font-size: 22px;
-    .Textocontacto {
-        text-align: center;
-        padding: 5%;
-        padding-bottom: 5%;
-    }
-    span{
-        @include margen();
-        i{
-            font-size: 1.8em;    
-        }      
-    }
-}
-/*FIN CONTACTO */
-/* POSVENTA */
-.principalPosventa{
-    display: grid;
-    @include tamanio(100%,130vh);    
-    text-align: center;
-    justify-content: center;
-    h2{
-        font-size: 2em;                
-    }
-    fieldset{
-        form{
-            margin-top:5% ;
-            label, input[type="email"], input[type="number"], input[type="text"] {
-                font-size: 1.5em; 
-                width: 60%;                          
-            }
-            input[type="file"]{
-                font-size: 1em;
-                width:70%;
-            }
-            textarea{
-                height:10em;
-                font-size: 1.5em;
-            }
-            #enviar{
-                font-size: 1.5em;                
-                @include tamanio(250px,50px);  
-            }
-            #borrar{
-                font-size: 1.5em;
-                @include tamanio(250px,50px);  
-            }
-        }
-    }
-    
-}
-/*FIN POSVENTA */
-}
-@media only screen and (min-width:3839px)
-{
-    *{
-        @include margen();
-        box-sizing: border-box;
-    }
     /* HEADER */
-    .navbar{
-        .navbar-brand{
-            color:white;
-            font-size: 3em;
-            span{       
-                font-weight: 500;
-                font-size: 1em;    
-            }
-        }
+    .navbar{    
         .collapse{
-            padding-left: 15%;
-            @include tamanio(100%,110px);            
-            .navbar-nav{                                                              
-                .nav-item {                                                    
-                    color: white;
-                    font-size: 2.9em;                                
-                }
+            padding-left: 15%;        
+            .navbar-nav{
+                font-size: 22px;
             }
             .d-flex{
-                .btn{
-                    @include tamanio(8em,1.6em);                    
-                    color: white;
-                    font-size: 2.5em;
-                    line-height: 20px;        
+                .btn{                
+                    @include tamanio(100px,30px);    
+                    font-size: 1.2em;
+                    line-height: 5px;           
                 }
                 .form-control{
-                    @include tamanio(25em,2em);                    
-                    font-size: 2em;        
-                }
+                    width: 25em;
+                    height: 2em;
+                    @include tamanio(25em,2em); 
+                    font-size: 1em;        
+                } 
             }
         }
+        
     }
     /*FIN HEADER */
-
     /* FOOTER */
-    .pie{
-        display: grid;        
-        @include tamanio(100%,440px);        
-        grid-template-rows: 300px 70px 70px;
-        padding:0;
-        .redes{
-            font-size: 3.2em;
-            align-items: center;                                
-        }
-        .derechos{           
-            @include tamanio(100%,100%); 
+    .pie{    
+        @include tamanio(100%,250px); 
+        grid-template-rows: 150px 50px 50px ;
+        @include margen();
+        .redes {
             font-size: 2em;
+            letter-spacing: 1em;       
+        }
+        .derechos{        
+            font-size: 1.2em;
+            padding-bottom: 1%;
             h2{
-                margin: 0;                
-            }          
-        } 
-        .ubicacion{
-            @include tamanio(100%,100%);
-            justify-content: center;
-            iframe{                
-                @include tamanio(90%,95%);            
+                @include margen();
             }
-        }      
-    }     
+        }
+        .ubicacion {        
+            @include tamanio(100%,150px);
+            justify-content: center;        
+            iframe{            
+                @include tamanio(90%,90%);           
+            }
+        }    
+    }
     /*FIN FOOTER */
     /* PRINCIPAL */
-    .principal{        
-        @include tamanio(100%,180vh);
-        @include fondo2(60% 800px, 100% 600px,center top, center 150em,no-repeat);
-        background-color: $colorPrincipal;       
-        .carousel{
-            @include tamanio(60%,65em);
-            margin-bottom:20%;            
-            .carousel-indicators{
-                button{
-                    width: 70px;
-                }
-            }
-            .carousel-inner{               
-                @include tamanio(100%,1200px);
-                .carousel-item{
-                    @include tamanio(100%,100%);                    
-                    img{
-                        @include tamanio(100%,100%);
-                    }
-                }
-            }
+    .principal{    
+        @include tamanio(100%,240vh);   
+        @include fondo2(60% auto ,60% auto,center top,center 95%,no-repeat);
+        .carousel{      
+            @include tamanio(50%,auto);
+            margin-top: 30%;       
         }
-    }     
+    }
     /*FIN PRINCIPAL */
     /* PRODUCTOS */
     .principalP{
-        .filtros {
-            .dropdown{
-                width: 60%;
-                padding-left: 5px;
-                button{
-                    height: 2em;
-                    font-size: 2em;       
-                }
-            }
-        }
-        .productos{
+        .productos {
             grid-gap:10px;
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(8,1fr);
+            grid-template-rows: repeat(8,1fr);       
             .item{
-                a{
-                    @include tamanio(100%,100%);
-                    img{
-                        @include tamanio(800px,800px);                        
-                    }
+                a{             
                     p{
-                        font-size: 35px;
+                        font-size: 1.5em;
                     }
-                }                
+                }
+                
             }
         }
-    }   
+    }     
     /*FIN PRODUCTOS */
     /* SOBRE NOSOTROS */
     .principalSobreNosotros{
-
         .SNlogo{
-            @include tamanio(75em,39.26em);            
+            @include tamanio(75em,39.26em);
+            padding-top: 0%;
+            margin-bottom: 3%;
             img{
                 @include tamanio(75em,39.26em);
             }
         }
         #Texto{
-            font-size: 3em;
-        }        
+            font-size: 1.3em;
+        }
     }
     /*FIN SOBRE NOSOTROS */
     /* CONTACTO */
-    .principalContacto{
-        @include tamanio(100%,100vh);
-        @include fondo1(100% 600px,center 80em,no-repeat);
-        padding: 0;        
-        padding-bottom:25% ;        
-        .Textocontacto{
-            padding: 2%;
-            font-size: 4em;
+    .principalContacto{    
+        @include tamanio(100%,150vh);
+        @include fondo1(60% auto,center 80%,no-repeat);  
+        padding-bottom: 40%;
+        font-size: 22px;
+        .Textocontacto {
             text-align: center;
+            padding: 5%;
+            padding-bottom: 5%;
         }
         span{
-            font-size: 3em;
-            padding-bottom: 3%;
+            @include margen();
+            i{
+                font-size: 1.8em;    
+            }      
         }
-    }     
+    }
     /*FIN CONTACTO */
     /* POSVENTA */
     .principalPosventa{
         display: grid;
-        @include tamanio(100%,130vh);        
+        @include tamanio(100%,130vh);    
         text-align: center;
         justify-content: center;
         h2{
-            font-size: 4em;                
+            font-size: 2em;                
         }
         fieldset{
-            width:100%;            
             form{
                 margin-top:5% ;
                 label, input[type="email"], input[type="number"], input[type="text"] {
-                    font-size: 2.5em;
-                    width:70%;                           
+                    font-size: 1.5em; 
+                    width: 60%;                          
                 }
                 input[type="file"]{
-                    font-size: 2em;
-                    width:80%;
+                    font-size: 1em;
+                    width:70%;
                 }
-                textarea{                    
-                    font-size: 2em;
-                    height: 600px;
+                textarea{
+                    height:10em;
+                    font-size: 1.5em;
                 }
-                #enviar{                    
-                    @include tamanio(600px,80px);
-                    font-size: 2.5em;
+                #enviar{
+                    font-size: 1.5em;                
+                    @include tamanio(250px,50px);  
                 }
                 #borrar{
-                    @include tamanio(600px,80px);
-                    font-size: 2.5em;
+                    font-size: 1.5em;
+                    @include tamanio(250px,50px);  
                 }
             }
         }
-                
-    } 
+        
+    }
     /*FIN POSVENTA */
-    /* BOTON SUBIR */
-    .subir{    
-        position:fixed;
-        right:60px;
-        bottom: 100px;        
-        @include tamanio(80px,80px);
-        background-color: $colorHeader;    
-        border-radius: 50%;
-        text-align: center;
-        line-height: 80px;    
-        font-size: 50px;
-        i{    
-            color: black;            
-        }    
-    }    
-    /*FIN BOTON SUBIR */
 }
-
 /*FIN MEDIA QUERIES */

@@ -20,14 +20,17 @@
         }
     }
     .productos{
+        width: 100%;
         text-align: center;
         .item{
-            margin-top: 2em;
+            width: 100%;
+            height: auto;            
+            margin-top: 5%;
             transition: transform 0.3s;
             &:hover{
-                @include hoverProd(none,-5px 5px 3px white,scale(1.01));
+                @include hoverProd(none,-5px 5px 3px rgb(255, 255, 255),scale(1.01));
              }             
-            a{
+            a{                              
                 text-decoration: none;
                 color: black;
                 font-weight: 500;
@@ -40,10 +43,11 @@
                    @include hoverProd(black,-5px 5px 3px white,none);
                 }
                 img{                    
-                    width:15em;
-                    background-color: white;
-                    &:hover{
-                        background-color: white;
+                    width: 76.92%;
+                    max-width: 325px;
+                    aspect-ratio: 1;
+                    background-color: white;                   
+                    &:hover{                        
                         border-radius: 20px;                        
                     }        
                 }

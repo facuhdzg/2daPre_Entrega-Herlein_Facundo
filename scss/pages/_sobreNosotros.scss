@@ -4,14 +4,16 @@
     background-color: $colorPrincipal;
     text-align: center;
     padding: 2%;
-
+    @include tamanio(100%,auto);
     .SNlogo{       
-        @include tamanio(18.75em,9.81em);
+        @include tamanio(95%,auto);
+        aspect-ratio: 1.911;
         justify-self: center;
         padding-top: 5%;
         margin-bottom: 8%;
-        img{
-            @include tamanio(18.75em,9.81em);
+        img{            
+            @include tamanio(95%,auto);
+            aspect-ratio: 1.911;
         }        
     }
 }

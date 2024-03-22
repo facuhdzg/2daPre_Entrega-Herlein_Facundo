@@ -1,10 +1,10 @@
 /* PRINCIPAL POSVENTA */
 .principalPosventa{
-    display:grid;    
-    @include tamanio(100%,100vh);
+    display:grid;   
+    @include tamanio(100%,auto);    
     background-color: $colorPrincipal;
     padding:2%;
-    padding-bottom: 40%;
+    padding-bottom: 10%;
     label{
         margin-bottom: 3%;
         font-weight: bold;        
@@ -12,9 +12,12 @@
     input{        
         @extend %camposPosventa;
         &:focus{            
-            background-color: white;
-            transform: scale(1.1);
+            background-color: white;            
+            &::placeholder{
+                color: transparent;
+            }
         }
+        
     }
     input[type="file"]{
         @extend %camposPosventa;       
@@ -25,14 +28,17 @@
         @include tamanio(100%,none); 
         background-color: rgb(255, 235, 235);
         &:focus{            
-            background-color: white;            
+            background-color: white;
+            &::placeholder{
+                color: transparent;
+            }            
         }
     }
     #enviar{
        @extend %botonForm;
        transition: transform 0.2s;
        &:hover{            
-        @include hover(white,-5px 3px 2.5px black,scale(1.1));
+        @include hover(white,-5px 3px 6px black,scale(1.1));
        }
        &:active{
         @include active(black,none,scale(0.9));           
@@ -42,11 +48,15 @@
         @extend %botonForm;
         transition: transform 0.2s;
         &:hover{            
-            @include hover(white,-5px 3px 2.5px black,scale(1.1));
+            @include hover(white,-5px 3px 6px black,scale(1.1));
         }
         &:active{
             @include active(black,none,scale(0.9));           
         }
+    }
+    .botones{
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 /*FIN PRINCIPAL POSVENTA */

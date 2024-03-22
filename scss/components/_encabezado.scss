@@ -11,19 +11,21 @@
     }
     .navbar-nav{
         .nav-item {
-            color: white;
-            transition: transform 0.2s ; 
-            &:hover{
-                @include hover(black,-3px 3px 2.5px black,scale(1.1));                
+            color: black;
+            transition: transform 0.2s ;           
+            &:hover{                               
+                background-color:#198754  ;
+                border-radius: 15px;              
             }
-            &:active{
-                @include active(white,-3px 3px 2.5px black,scale(1));                
+            &:active{                 
+                background-color:#198754 ;
+                border-radius: 15px;                             
             }    
         }
     }
     .d-flex{
         .btn{
-            color: white;
+            color: black;
         }
     }
 } 

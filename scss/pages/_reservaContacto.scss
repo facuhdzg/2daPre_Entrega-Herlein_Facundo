@@ -4,26 +4,24 @@
     @include tamanio(100%,100vh); 
     background-color: $colorPrincipal;
     background-image: url(https://flex.f6s.com/content-resource/media/946526.jpg);
-    @include fondo1(100% 11.90%,center 85%,no-repeat); 
+    @include fondo1(100% auto,center 85%,no-repeat);        
     padding-bottom: 80%;    
     .Textocontacto{
         padding:5%;
         text-align: justify;
         font-size: 1.5em;
     }
-    span{
-        text-align: center;        
-        a{
-            color:black;
-            text-decoration: none;
-            font-size: 1.5em;
-            margin: 2%;           
-            &:hover{
-                @include hover(white,-3px 3px 2.5px black,none);
-            } 
-            &:active{
-                @include active(black,none,none);
-            }   
+    .linkContacto{
+        text-align: center; 
+        color: black;
+        text-decoration: none;
+        font-size: 1.5em;
+        margin: 2%;       
+        &:hover{
+            @include hover(white,-3px 3px 6px black,none);
+        } 
+        &:active{
+            @include active(black,none,none);
         }
     }     
 }

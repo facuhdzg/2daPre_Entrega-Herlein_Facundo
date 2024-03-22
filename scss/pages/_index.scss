@@ -1,46 +1,52 @@
 /* Principal INDEX */
 .principal{
     display: grid;    
-    @include tamanio(100%,94vh); 
+    @include tamanio(100%,auto);
+    aspect-ratio: 0.3418; 
     background-color:$colorPrincipal;    
     @extend %alineacion;
     background-image: url(../img/publicidad-1.webp),url(https://flex.f6s.com/content-resource/media/946526.jpg);
-    @include fondo2(100% 18.15%,100% 11.90%,center top,center 85%,no-repeat);    
+    @include fondo2(100% auto,100% auto,center top,center 85%,no-repeat);    
     .carousel{        
-        // @include tamanio(100%,15em);
-        @include tamanio(100%,25.17%);
-        margin-bottom: 20%;           
-        .carousel-inner{               
-            @include tamanio(100%,100%);            
-            .carousel-item{
-                @include tamanio(100%,100%);                
+        @include tamanio(100%,auto);
+        aspect-ratio: 1;
+        margin-bottom: 20%;                
+        .carousel-inner{           
+            @include tamanio(100%,auto);
+            aspect-ratio: 1;            
+            .carousel-item{                              
                 /*RTX 4090*/                    
-                .img1{
-                    // @include tamanio(100%,14.33em);
-                    @include tamanio(100%,99.80%);
+                .img1{                   
+                    @include tamanio(100%,auto);                   
+                    aspect-ratio: 1.36;
+                    margin-top: 10%;                                        
                 }
                 /*FIN RTX 4090*/
                 /*MOTHER B550*/      
                 .img2{
-                    @include tamanio(100%,100%);
+                    @include tamanio(100%,auto);                    
+                    aspect-ratio: 1;
                 }
                 /*FIN MOTHER B550*/
                 /*RYZEN 9*/    
-                .img3{
-                    // @include tamanio(100%,11.01em);
-                    @include tamanio(100%,76.68%);
+                .img3{                   
+                   @include tamanio(100%,auto);                 
+                   aspect-ratio: 1.77;
+                   margin-top:15%;                  
                 }
                 /*FIN RYZEN 9*/
                 /*GABINETE*/       
                 .img4{
-                    @include tamanio(100%,100%);
+                   @include tamanio(100%,auto);                   
+                   aspect-ratio: 1;                   
                 }
                 /*FIN GABINETE*/   
                 .img5{
-                    @include tamanio(100%,108%);
+                   @include tamanio(100%,auto);                   
+                   aspect-ratio: 1.25;
+                   margin-top:10%;
                 }          
-            }
-           
+            }   
             
         }
     } 
