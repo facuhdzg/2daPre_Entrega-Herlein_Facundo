@@ -642,7 +642,7 @@ html {
   }
   /*FIN POSVENTA*/
 }
-@media only screen and (min-width: 1024px) and (max-width: 1498px) {
+@media only screen and (min-width: 1024px) and (max-width: 1499px) {
   /* HEADER */
   .navbar .navbar-brand span {
     font-size: 1.1em;
@@ -765,6 +765,22 @@ html {
   }
   /*FIN POSVENTA */
 }
+@media only screen and (min-width: 1366px) and (min-height: 768px) and (max-height: 769px) {
+  /* PRINCIPAL */
+  .principal {
+    width: 100%;
+    height: 240vh;
+    background-size: 70% auto, 70% auto;
+    background-position: center top, center 95%;
+    background-repeat: no-repeat;
+  }
+  .principal .carousel {
+    width: 50%;
+    height: auto;
+    margin-top: 20%;
+  }
+  /*FIN PRINCIPAL */
+}
 @media only screen and (min-width: 1500px) and (max-width: 1919px) {
   /* FOOTER */
   .pie {
@@ -871,7 +887,7 @@ html {
   }
   /*FIN POSVENTA*/
 }
-@media only screen and (min-width: 1920px) and (max-width: 3837px) {
+@media only screen and (min-width: 1920px) {
   /* HEADER */
   .navbar .collapse {
     padding-left: 15%;

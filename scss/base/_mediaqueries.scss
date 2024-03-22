@@ -217,7 +217,7 @@
     }   
     /*FIN POSVENTA*/
 }
-@media only screen and (min-width:1024px) and (max-width:1498px)
+@media only screen and (min-width:1024px) and (max-width:1499px)
 {
     /* HEADER */
     .navbar{
@@ -336,6 +336,18 @@
     }
     /*FIN POSVENTA */
 }
+@media only screen and (min-width: 1366px) and (min-height: 768px) and (max-height:769px){
+    /* PRINCIPAL */
+    .principal{    
+        @include tamanio(100%,240vh);   
+        @include fondo2(70% auto ,70% auto,center top,center 95%,no-repeat);
+        .carousel{      
+            @include tamanio(50%,auto);
+            margin-top: 20%;       
+        }
+    }
+    /*FIN PRINCIPAL */
+}
 @media only screen and (min-width:1500px) and (max-width: 1919px)
 {
     /* FOOTER */
@@ -429,7 +441,7 @@
     }
     /*FIN POSVENTA*/
 }
-@media only screen and (min-width:1920px) and (max-width:3837px){
+@media only screen and (min-width:1920px){
     /* HEADER */
     .navbar{    
         .collapse{
